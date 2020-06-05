@@ -1,2 +1,2 @@
-# codezoned.github.io
-Officiale repo to host event websites 
+# HAC2020
+Official website for HAC2020
