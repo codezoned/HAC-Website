@@ -104,6 +104,39 @@
             color: #d52d30;
             background: none;
             border: solid #d52d30 2px;
+            
+        }
+
+        .pulsate {
+            -webkit-animation: pulsate 3s ease-out;
+            -webkit-animation-iteration-count: infinite; 
+            opacity: 0.5;
+        }
+        @-webkit-keyframes pulsate {
+            0% { 
+                opacity: 0.5;
+            }
+            50% { 
+                opacity: 1.0;
+            }
+            100% { 
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes shadow-pulse
+        {
+            0% {
+                box-shadow: 255 255 255 0px rgba(0, 0, 0, 0.2);
+            }
+            100% {
+                box-shadow: 255 255 255 45px rgba(0, 0, 0, 0);
+            }
+        }
+
+        .image-ripple
+        {
+            animation: shadow-pulse 1s infinite;
         }
 
 
@@ -126,13 +159,13 @@
                             <a href="#home" style="color: #e71a1a;">home</a>
                         </li>
                         <li>
-                            <a href="#about" style="color: #e71a1a; font-size: 1.25em;">__about</a>
+                            <a href="#about" style="color: #e71a1a; font-size: 1.25em;">_about</a>
                         </li>
                         <li>
                             <a href="#sponsors" style="color: #e71a1a; font-size: 1.25em;">_sponsors</a>
                         </li>
                         <li>
-                            <a href="#details" style="color: #e71a1a; font-size: 1.25em;">__details</a>
+                            <a href="#faqs" style="color: #e71a1a; font-size: 1.25em;">_FAQs</a>
                         </li>
                     </ul>
                 </div>
@@ -144,13 +177,13 @@
             <a href="#about" style="color: #e71a1a;">home</a>
         </li>
         <li>
-            <a href="#about" style="color: #e71a1a; font-size: 1.25em;">__about</a>
+            <a href="#about" style="color: #e71a1a; font-size: 1.25em;">_about</a>
         </li>
         <li>
             <a href="#sponsors" style="color: #e71a1a; font-size: 1.25em;">_sponsors</a>
         </li>
         <li>
-            <a href="#details" style="color: #e71a1a; font-size: 1.25em;">__details</a>
+            <a href="#faqs" style="color: #e71a1a; font-size: 1.25em;">_FAQs</a>
         </li>
     </ul>
 
@@ -158,7 +191,7 @@
     <div class="grid-container"  style="margin: 2.5%;">
 
         <div class="grid-child-1" style="">
-            <div class="logo-div" style="">
+            <div class="logo-div  image-ripple" style="border-radius: 50%; text-align: center;">
                 <img class="logo-img" src="static\design\images\HAC LOGO MAIN.png" alt="" style="">
             </div>
         </div>
@@ -179,20 +212,115 @@
             <div id="about" class="section scrollspy about-text" style="">
                 <h1 class="sponsor-text" style="padding: 10% 2%;">About</h1>
                 <div style="padding: 2%;font-size: 1.1rem;">
-                    HAC (Hack Against Covid) is a virtual hackathon that challenges students to build proactive technology and solutions to safeguard human interaction in the up and coming post covid19 world. HAC organized by CodeZoned is a virtual event to spread awareness and bring out possible solutions to the pandemic that is wreaking havoc. With lockdowns and safety measures in place, people have been left with nothing but the desire to go out and socialize. This Hackathon will resonate the fact that human interactions will transcend these restrictions through newer and technologically advanced ways.
-                    HAC is the right place for you to experiment with your ideas and meet like-minded people with the immediate goal of overcoming this pandemic. With talks and webinars in place, HAC is the ultimate package to have fun, learn and grow.
+                    HAC (Hack Against Covid) is a virtual hackathon that challenges students to build proactive technology and solutions to safeguard human interaction in the up and coming post covid19 world.
+                    <br><br> <p style="text-align: center;"><i>“The uncreative mind can spot wrong answers, but it takes a very creative mind to spot wrong questions.” ― Anthony Jay. </i></p> <br>
+                    We at Codezoned strongly believe in this and want HAC to be a testament of the same. We are looking for creative and innovative minds that dare to ask the right questions. With lockdowns and safety measures in place, people have been left with nothing but the desire to go out and socialize. As innovators and minds of tomorrow, we want YOU to come up with technology that will help facilitate human interactions in newer ways.
+                    Come join us from the comfort of your homes to create a stronger community in these uncertain and trying times.
                     <br><br> Come join and contribute from the safety and comfort of your homes.
-<br><br>
+                    <br><br>
                     <a class="code-of-conduct" href="https://github.com/codezoned/code-of-conduct/blob/master/code-of-conduct.md" style="color: white;"><b>More details are coming along your way. But for now, please make sure you have read our <span style="color: #d52d30;"> code of conduct.</span></b></a> 
                     <div id="anchor-point" style="height: 1px;"></div>
 
                 </div>
             </div>
-            
-            
-            <div class="grid-child-3" style="">
-                <div id="sponsors" class="section scrollspy sponsor-section" style="width: 100%;">
+
+            <div id="faqs" class="section scrollspy about-text" style="margin-top: 45%; margin-bottom: 5%;">
+                <h1 class="sponsor-text" style="padding-top: 10%; padding-bottom: 2%; padding-left: 2%; padding-right: 2%;">FAQs</h1>
+                <div style="padding: 2%;font-size: 1.1rem;">
+                    <br><b>1.  	Who can attend? </b> <br>
+                    Students, professionals, and anybody who is passionate about coding are welcome to contribute and participate in Hack Against Covid (HAC)
+                    
+                    <br><br> <b>2. Do I need to know programming to participate?</b><br>
+                    No, not at all. Hackathons are the best place to bring together diverse skill sets to solve a common goal. People from all backgrounds including designing, marketing, analysis and entrepreneurship join forces together to visualize a product. We highly encourage you to meet and collaborate with other participants to pitch your idea
+                    
+                    <br><br><b>3.  	How can I register for HAC?</b><br>
+                    Registrations for HAC will be open soon. Stay tuned for more updates.<br>
+                    
+                    <br><b>4. 	Where is HAC happening and how long is it for?</b> <br>
+                    Keeping your safety and comfort in mind, HAC will be conducted virtually to freely facilitate innovation. This hackathon will be for 50 hours.
+                    <br><br><b>5. Is there a way I can communicate with the team and the participants?</b><br>
+                    We’ll soon be posting links to our exclusive discord server for all community discussions and ideations. Watch this space for more updates.
+                    <br><br> <b>6. Is this a team event? What if I do not have a team?</b><br>
+                    Yes, it is a team event but if going solo is your style, we are all for it. You can also meet new people and find yourself a team through our discord servers before the Hack begins.
+                    <br><br> <b>7.	Are there any prizes?</b><br>
+                    Yes, there is a plethora of swag and goodies for every participant.<br>
+                    <br> <b>8. What is the Code of Conduct?</b><br>
+                    Click here to read our <span style="color: #d52d30;">Code of Conduct.</span> <br>
+
+                    <div id="anchor-point" style="height: 1px;"></div>
+
+                </div>
+
+            </div>
+            <div id="sponsors" class="section scrollspy sponsor-section" style="width: 100%; margin-top: 20%;">
                 <h1 class="sponsor-text" style="padding: 2%;">Sponsors</h1>
+                <div style="padding: 2%;font-size: 1.1rem;">
+                    <div class="grid-container-small centered" style="width: 100%;">
+                        <a id=""  target="_blank" href="https://forms.gle/PJHSidndo9mLsJUu8"><div class="button -regular center">Become a sponsor</div></a>    
+                    </div>
+                </div>
+                
+                <div class="grid-container-small-2" style=" padding: 10% 0;">
+                    <div>
+                        <a target="_blank" href="https://github.com"><img class="sponsor-logos" src="static/design/images/white-github.png" alt="Github"></a>
+                    </div>
+                    <!-- <div>
+                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
+                    </div>
+                    <div>
+                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
+                    </div> -->
+                </div>
+            </div> 
+
+            <div id="speakers" class="details section scrollspy " style="margin-bottom: 25%;">
+                <h1 class="sponsor-text" style="padding: 2%;">Speakers</h1>
+                <div style="padding: 2%;font-size: 1.1rem;">
+                    <div class="grid-container-small centered" style="width: 100%;">
+                        <a id="" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><div class="button -regular center">Become a speaker</div></a>    
+                    </div>
+                    
+                    <h4 style="font-size: 1.25rem;">We will be updating this section soon. <br> Till then, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><span style="color: #d52d30;">Become a speaker.</span></a></h4>
+                </div>
+                
+            </div>
+
+            <!-- <div id="details" class="details section scrollspy " style="margin-bottom: 25%;">
+                <h1 class="sponsor-text" style="padding: 2%;">Contact Us</h1>
+                <div style="padding: 2%;font-size: 1.1rem;">
+                    <div class="grid-container-small centered" style="width: 100%;">
+                        <a id=""  target="_blank" href="#"><div class="button -regular center">Contact us </div></a>    
+                    </div>
+                </div>
+                
+            </div> -->
+
+            <div id="the_team" class="details section scrollspy " style="margin-bottom: 25%;">
+                <h1 class="sponsor-text" style="padding: 2%;">The Team</h1>
+                <div style="padding: 2%;font-size: 1.1rem;">
+                    <div class="grid-container-small centered" style="width: 100%;">
+                        <a id="" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSes_pbYmFdp1qYfH57E2YhMA16B8o5uYmjXt_Sng5Pug0Xzqg/viewform?usp=sf_link"><div class="button -regular center">Join the team</div></a>    
+                    </div>
+
+                    <h4 style="font-size: 1.25rem;">We will be updating this section soon. <br> Till then, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><span style="color: #d52d30;">Join the Team.</span></a></h4>
+                </div>
+                
+            </div>
+
+
+           
+
+
+            
+            
+            <!-- <div class="grid-child-3" style="">
+                <div id="sponsors" class="section scrollspy sponsor-section" style="width: 100%;">
+                    <h1 class="sponsor-text" style="padding: 2%;">Sponsors</h1>
+                    <div style="padding: 2%;font-size: 1.1rem;">
+                        <div class="grid-container-small centered" style="width: 100%;">
+                            <a id=""  target="_blank" href="https://forms.gle/PJHSidndo9mLsJUu8"><div class="button -regular center">Give Me Your Wallet Prick</div></a>    
+                        </div>
+                    </div>
                     
                     <div class="grid-container-small-2" style=" padding: 10% 0;">
                         <div>
@@ -206,21 +334,22 @@
                         </div> -->
                     </div>
                 </div>      
-            </div>
+            </div> -->
 
-            <div id="details" class="details section scrollspy " style="margin-bottom: 25%;">
+            <!-- <div id="details" class="details section scrollspy " style="margin-bottom: 25%;">
                 <h1 class="sponsor-text" style="padding: 10% 2%;">Hackathon Details</h1>
                 <a id="conduct2" href="#"><div style="padding: 2%;font-size: 1.4rem; text-align: left; color: #eeeeee;">We'll be coming forward with the details soon. Till then, <span style="color: #d52d30;">Stay updated</span>.</div></a> 
-            </div>
+            </div> -->
         </div>
     </div>
     
     <div style="  background-color: #212121; height: 37.5px; width: 100%; position: fixed; bottom: 0; text-align: center; padding-top: 5px;">
-            <a target="_blank" href="http://codezoned.com"><div style="color: #eeeeee; font-family: profontwindows; font-size: 19px;">With &#x2764; by <span style="color: #d52d30; font-size: 22px;">code</span><span style="color: white;font-size: 22px;">zoned</span><span style="color: #767777; font-size: 22px;">;</span></div></a>
+            <a target="_blank" href="http://codezoned.com"><div style="color: #eeeeee; font-family: profontwindows; font-size: 19px;">With <span class="pulsate">&#x2764;</span> by <span style="color: #d52d30; font-size: 22px;">code</span><span style="color: white;font-size: 22px;">zoned</span><span style="color: #767777; font-size: 22px;">;</span></div></a>
     </div>
         <!-- d52d30
         white
         767777 -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     
