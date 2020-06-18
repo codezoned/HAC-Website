@@ -113,9 +113,23 @@ body {
 .sponsor-logos {
 	width: 60%;
 }
+.sponsor-logos-2 {
+	width: 75%;
+}
 
 .sponsor-text {
 	font-size: 2em;
+	font-family: quicksand;
+	color: #eeeeee;
+	text-align: left;
+	/* padding-left: 5%; */
+
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+.part-sponsor-text {
+	font-size: 1.375em;
 	font-family: quicksand;
 	color: #eeeeee;
 	text-align: left;
@@ -268,8 +282,21 @@ body {
 		margin-top: 5%;
 		margin-bottom: 1%;
 	}
+
+	.part-sponsor-text {
+		font-size: 1.375em;
+		font-family: quicksand;
+		color: #eeeeee;
+		text-align: center;
+		margin-top: 5%;
+		margin-bottom: 1%;
+	}
 	.sponsor-logos {
 		width: 100%;
+	}
+
+	.sponsor-logos-2 {
+		width: 105%;
 	}
 
 	.details {
