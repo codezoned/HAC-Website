@@ -259,8 +259,9 @@ body {
 
 	.grid-container-small-2 {
 		text-align: center;
-		display: grid;
-		grid-template-columns: 1fr;
+		/* display: grid; */
+		/* grid-template-columns: 1fr; */
+		width: 100%;
 	}
 	.grid-container-small-2 div {
 		/* margin-bottom: 10%; */
@@ -284,19 +285,20 @@ body {
 	}
 
 	.part-sponsor-text {
-		font-size: 1.375em;
+		font-size: 1.5em;
 		font-family: quicksand;
 		color: #eeeeee;
 		text-align: center;
 		margin-top: 5%;
 		margin-bottom: 1%;
+		font-weight: 500;
 	}
 	.sponsor-logos {
-		width: 100%;
+		width: 90%;
 	}
 
 	.sponsor-logos-2 {
-		width: 105%;
+		width: 87.5%;
 	}
 
 	.details {
