@@ -80,12 +80,6 @@
             border: solid white 2px;
 
         }
-        .button.-regular2 {
-            color: black;
-            background: none;
-            border: solid black 2px;
-
-        }
 
         .div-outer {
             position: relative;
@@ -107,12 +101,6 @@
         }
 
         .button.-regular:hover {
-            color: #d52d30;
-            background: none;
-            border: solid #d52d30 2px;
-            
-        }
-        .button.-regular2:hover {
             color: #d52d30;
             background: none;
             border: solid #d52d30 2px;
@@ -152,10 +140,6 @@
             animation: shadow-pulse 1s infinite;
         }
 
-        .row{
-            margin: 0 !important
-        }
-
 
         /* #devfolio-apply-now {
             -ms-flex-align: center;
@@ -177,25 +161,12 @@
             text-align: center;
             text-transform: lowercase;
         }
-
         #devfolio-apply-now:not([disabled]) {
             cursor: pointer;
         }
-
         #devfolio-apply-now:hover {
             /* background-color: #2954BF !important; 
         } */
-
-        .flex {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .names{
-            font-weight: 800;
-            font-size: 1.15em;
-            
-        }
 
     </style>
 
@@ -229,6 +200,7 @@
             </div>
         </nav>
     </div>
+
     <ul class="sidenav" id="mobile-nav" style=" font-family: profontwindows;">
         <li style="display: none;">
             <a href="#about" style="color: #e71a1a;">home</a>
@@ -244,15 +216,18 @@
         </li>
     </ul>
 
-    <div class="row flex" style="color: #eeeeee;">
-        <div class="col s12 m6">
-            
-                <div class="logo-div image-ripple" style="" id="theFixed">
-                    <img class="logo-img" src="static\design\images\HAC LOGO MAIN.png" alt="" style="width: 47.5%;">
-                </div>
+ 
+    <div class="grid-container"  style="margin: 2.5%;">
 
+        <div class="grid-child-1" style="">
+            <div class="logo-div  image-ripple" style="border-radius: 50%; text-align: center;">
+                <img class="logo-img" src="static\design\images\HAC LOGO MAIN.png" alt="" style="">
+            </div>
         </div>
-        <div class="col s12 m6" id="div2">
+
+         
+        <div  id="stay_updated"  class="grid-child-2 centered" style="text-align: center; color: white;">
+    
             <div style="width: 100%;" class="center-text-div"> 
                 <div class="covid-class" style="">Code it for <span  id="codeit">Covid</span>.</div>
                 <div class="grid-container-small centered" style="width: 100%;">
@@ -262,8 +237,11 @@
                 </div>
             </div>
 
-            <div id="about" class="section scrollspy about-text" style="width: 100%;">
-                <h1 class="about-text" style="padding: 10% 2%;">About</h1>
+
+            
+            
+            <div id="about" class="section scrollspy about-text" style="">
+                <h1 class="sponsor-text" style="padding: 10% 2%;">About</h1>
                 <div style="padding: 2%;font-size: 1.1rem;">
                     HAC (Hack Against Covid) is a virtual hackathon that challenges students to build proactive technology and solutions to safeguard human interaction in the up and coming post covid19 world.
                     <br><br> <p style="text-align: center;"><i>“The uncreative mind can spot wrong answers, but it takes a very creative mind to spot wrong questions.” ― Anthony Jay. </i></p> <br>
@@ -272,12 +250,13 @@
                     
                     <br><br>
                     <a class="code-of-conduct" href="https://github.com/codezoned/code-of-conduct/blob/master/code-of-conduct.md" style="color: white;"><b>More details are coming along your way. But for now, please make sure you have read our <span style="color: #d52d30;"> code of conduct.</span></b></a> 
+                    <div id="anchor-point" style="height: 1px;"></div>
 
                 </div>
             </div>
 
-            <div id="faqs" class="section scrollspy about-text" style="margin-top: 45%; margin-bottom: 15%;">
-                <h1 class="faq-text" style="padding-top: 10%; padding-bottom: 2%; padding-left: 2%; padding-right: 2%;">FAQs</h1>
+            <div id="faqs" class="section scrollspy about-text" style="margin-top: 45%; margin-bottom: 5%;">
+                <h1 class="sponsor-text" style="padding-top: 10%; padding-bottom: 2%; padding-left: 2%; padding-right: 2%;">FAQs</h1>
                 <div style="padding: 2%;font-size: 1.1rem;">
                     <br><b>1.  	Who can attend? </b> <br>
                     Students, professionals, and anybody who is passionate about coding are welcome to contribute and participate in Hack Against Covid (HAC)
@@ -299,42 +278,35 @@
                     <br> <b>8. What is the Code of Conduct?</b><br>
                     Click here to read our <a href="https://github.com/codezoned/code-of-conduct/blob/master/code-of-conduct.md"><span style="color: #d52d30;">Code of Conduct.</span></a> <br>
 
+                    <div id="anchor-point" style="height: 1px;"></div>
+
                 </div>
+
             </div>
-            <div id="anchor-point" style="height: 1px;"></div>
-        </div>
-    </div>
-
-
-
-
-    <div class="row">
-
-        <div class="col s12 m12 l12"  style="text-align: center; color: #070707; background-color: #eeeeee; padding-bottom: 7.5%;">
-            <div id="sponsors" class="scrollspy" style="width: 100%;">
-                <h1 id="sponsor-text" class="sponsor-text" style="padding: 2%; color: #070707;">Sponsors</h1>
-                <div style="font-size: 1.1rem;">
-                    <div class="centered" style=" color: #070707; max-width: 200px; margin: auto;">
-                        <a id="sponsor-btn"  target="_blank" href="https://forms.gle/PJHSidndo9mLsJUu8"><div class="button -regular2 center">Become a sponsor</div></a>    
+            <div id="sponsors" class="section scrollspy sponsor-section" style="width: 100%; margin-top: 20%;">
+                <h1 class="sponsor-text" style="padding: 2%;">Sponsors</h1>
+                <div style="padding: 2%;font-size: 1.1rem;">
+                    <div class="grid-container-small centered" style="width: 100%;">
+                        <a id=""  target="_blank" href="https://forms.gle/PJHSidndo9mLsJUu8"><div class="button -regular center">Become a sponsor</div></a>    
                     </div>
                 </div>
                 
-                <div class="row">
-                    <h2 class="part-sponsor-text" style="padding: 2%;">Title Sponsor:-</h2>
-                    <div class="col s12 m12">
-                        <a target="_blank" href="https://github.com"><img class="sponsor-logos" src="static/design/images/Github_Logo.png" alt="Github"></a>
-                    </div><br>
-                    <h2 class="part-sponsor-text" style="padding: 2%;">Platinum Sponsors:-</h2>
-                    <div class="col s12 m12"><br>
-                        <a target="_blank" href="https://devfolio.co/home/"><img class="sponsor-logos-2" src="static/design/images/Devfolio-Dark.png" alt="Devfolio"></a>
-                    </div><br>
-                    <h2 class="part-sponsor-text" style="padding: 2%; margin-top: 12.5%; margin-bottom: 5%;">Gold Sponsors:-</h2>
-                    <div class="col s12 m6"><br>
-                        <a target="_blank" href="https://matic.network/"><img class="sponsor-logos-2" style="width: 60%;" src="static/design/images/Matic-Network_Logo.png" alt="Matic"></a>
-                    </div> <br>
-                    <div class="col s12 m6">
-                        <a target="_blank" href="https://matic.network/"><img class="sponsor-logos-2" src="static/design/images/fold-logo.svg" alt="Matic"></a>
+                <div class="grid-container-small-2" style=" margin: 10% 0;">
+                    <h2 class="part-sponsor-text" style="padding: 2%; padding-top: 5%;">Title Sponsor:-</h2>
+                    <div style=" ">
+                        <a target="_blank" href="https://github.com"><img class="sponsor-logos" src="static/design/images/white-github.png" alt="Github"></a>
                     </div>
+                    <h2 class="part-sponsor-text" style="padding: 2%;">Platinum Sponsors:-</h2>
+                    <div><br>
+                        <a target="_blank" href="https://devfolio.co/home/"><img class="sponsor-logos-2" src="static/design/images/Devfolio-White.png" alt="Devfolio"></a>
+                    </div><br>
+                    <h2 class="part-sponsor-text" style="padding: 2%;">Gold Sponsors:-</h2>
+                    <div style="background-color: #eeeeee;"><br>
+                        <a target="_blank" href="https://matic.network/"><img class="sponsor-logos-2" style=" margin-bottom: 5%;"  src="static/design/images/Matic-Network_Logo.png" alt="Matic"></a>
+                    </div> <br>
+                    <div style="background-color: #eeeeee; padding: 15px;">
+                        <a target="_blank" href="https://matic.network/"><img class="sponsor-logos-2" src="static/design/images/fold-logo.svg" alt="Matic"></a>
+                    </div><br><br><br>
                     <!-- <div>
                         <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
                     </div>
@@ -344,94 +316,149 @@
                 </div>
             </div> 
         </div>
-
-        <div class="col s12 m12 l12" style="text-align: center; color: #eeeeee;">
-            
-            <div id="speakers" class="scrollspy" style="margin-bottom: 25%;">
-                <h1  id="speaker-text"  class="team-speaker-text">Speakers and Judges</h1>
+    </div>
+    <div class="grid-container"  style="margin: 2.5%;">
+            <div id="speakers" class="details section scrollspy " style="margin-bottom: 25%;">
+                <h1 class="sponsor-text" style="padding: 2%;">Speakers and Judges</h1>
                 <div style="padding: 2%;font-size: 1.1rem;">
                     <div style="padding: 2%;font-size: 1.1rem;">
-                        
-                        <div class="team-speaker-buttons centered" style="margin-bottom: 20px;margin: auto;">
-                            <a id="speaker-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><div class="button -regular center">Become a speaker</div></a>       
+                        <div class="grid-container-small centered" style="width: 100%; margin-bottom: 20px;">
+                            <a id="" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><div class="button -regular center">Become a speaker</div></a>       
                         </div>
-                        
                     </div>
-
-
-
-                    <div class="row justify-content-center text-center" style="font-family: quicksand;">
-                        <div class="col-md-4 col-lg-8 animated bounceInLeft" id="animate2">
-                            <div class="row">
-                                <div class="col s12 m2 offset-m3" style="background-color: white; min-height: 325px; margin-right: 10px">
-                                    <div class="card darken-1">
-                                        <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
-                                            <img src="static/design/images/AaronB.jpg" style="">      
+                    
+                        
+                    
+                        <div class="row">
+                            <!-- <a href="https://www.linkedin.com/in/aaron-burdick-7b198522/" style="">
+                                <div class="col s12 m3" style="background-color: #070707; margin-bottom: 20px;">
+                                    <div class="card" style="background-color: #070707;">
+                                        <div class="card-image">
+                                            <img src="static/design/images/AaronB.jpg" style=" border-radius: 50% !important;">
+                                            
                                         </div>
-                                    </div>
-                                    <div class="card-content white-text" style="padding-bottom: 10px;">
-                                        <span class="card-title names" style="color: black;"><strong>Aaron Burdick</strong></span>
-                                        <p style="color: #070707; font-size: 0.9em;">Full-stack developer, Zeals, Tokyo</p>
-                                    </div>
-                                </div> 
-                                
-                                <div class="col s12 m2" style="background-color: white; min-height: 325px; margin-right: 10px">
-                                    <div class="card darken-1">
-                                        <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
-                                            <img src="static/design/images/JuanPabloFlores.jpg" style="">      
+                                        <div class="card-content"  style="background-color: #070707; color: #eeeeee;">
+                                            <span class="card-title">Aaron Burdick</span>
+                                            <p>Full-stack developer, Zeals, Tokyo</p>
                                         </div>
-                                    </div>
-                                    <div class="card-content white-text" style="padding-bottom: 10px;">
-                                        <span class="card-title names" style="color: black;"><strong>Juan Pablo Flores</strong></span>
-                                        <p style="color: #070707; font-size: 0.9em;">Program Manager, GitHub</p>
-                                    </div>
-                                </div> 
-                                
-                                <div class="col s12 m2" style="background-color: white; min-height: 325px;">
-                                    <div class="card darken-1">
-                                        <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
-                                            <img src="static/design/images/sagar-wakawaka.jpg" style="">      
-                                        </div>
-                                    </div>
-                                    <div class="card-content white-text" style="padding-bottom: 10px;">
-                                        <span class="card-title names" style="color: black;"><strong>Sagar Vakkala</strong></span>
-                                        <p style="color: #070707; font-size: 0.9em;">Founder, Codezoned;</p>
                                     </div>
                                 </div>
+                            </a> -->
 
-                                 
+                            
+                        <div class="row justify-content-center text-center" style="">
+                            <div class="col-md-4 col-lg-8 animated bounceInLeft" id="animate2">
+                                <div class="row">
+                                    <a href="">
+                                        <div class="col s12 m6">
+                                            <div class="card darken-1" style="background-color: white; height: 500x; min-width: 100px;">
+                                                <div class="card-image z-depth-5" style="width: 94%; margin: auto; padding-top: 8px;">
+                                                    <img src="static/design/images/AaronB.jpg" style="">      
+                                                </div>
+                                                <div class="card-content white-text">
+                                                    <span class="card-title center-align" style="color: black;"><strong>Aaron Burdick</strong></span>
+                                                    <p style="color: #777777">Full-stack developer, Zeals, Tokyo</p>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </a>
+                                    <a href="">
+                                        <div class="col s12 m6">
+                                            <div class="card darken-1" style="background-color: white; height: 500x; min-width: 100px;">
+                                                <div class="card-image z-depth-5" style="width: 94%; margin: auto; padding-top: 8px;">
+                                                    <img src="static/design/images/AaronB.jpg" style="">      
+                                                </div>
+                                                <div class="card-content white-text">
+                                                    <span class="card-title center-align" style="color: black;"><strong>Aaron Burdick</strong></span>
+                                                    <p style="color: #777777">Full-stack developer, Zeals, Tokyo</p>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                        
+                                    </a>
+                                    <a href="">
+                                        <div class="col s12 m6">
+                                            <div class="card darken-1" style="background-color: white; height: 500x; min-width: 100px;">
+                                                <div class="card-image z-depth-5" style="width: 94%; margin: auto; padding-top: 8px;">
+                                                    <img src="static/design/images/AaronB.jpg" style="">      
+                                                </div>
+                                                <div class="card-content white-text">
+                                                    <span class="card-title center-align" style="color: black;"><strong>Aaron Burdick</strong></span>
+                                                    <p style="color: #777777">Full-stack developer, Zeals, Tokyo</p>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                        
+                                    </a>
+                                    <a href="">
+                                        <div class="col s12 m6">
+                                            <div class="card darken-1" style="background-color: white; height: 500x; min-width: 100px;">
+                                                <div class="card-image z-depth-5" style="width: 94%; margin: auto; padding-top: 8px;">
+                                                    <img src="static/design/images/AaronB.jpg" style="">      
+                                                </div>
+                                                <div class="card-content white-text">
+                                                    <span class="card-title center-align" style="color: black;"><strong>Aaron Burdick</strong></span>
+                                                    <p style="color: #777777">Full-stack developer, Zeals, Tokyo</p>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                        
+                                    </a>
+                                    <a href="">
+                                        <div class="col s12 m6">
+                                            <div class="card darken-1" style="background-color: white; height: 500x; min-width: 100px;">
+                                                <div class="card-image z-depth-5" style="width: 94%; margin: auto; padding-top: 8px;">
+                                                    <img src="static/design/images/AaronB.jpg" style="">      
+                                                </div>
+                                                <div class="card-content white-text">
+                                                    <span class="card-title center-align" style="color: black;"><strong>Aaron Burdick</strong></span>
+                                                    <p style="color: #777777">Full-stack developer, Zeals, Tokyo</p>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                        
+                                    </a>
+
+                                </div>
                             </div>
-    
-                        </div>
-                    </div>
+                          </div>
+                 
+                    
                     <h4 style="font-size: 1.25rem;">We will be updating this section soon. <br> Till then, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><span style="color: #d52d30;">Become a speaker.</span></a></h4>
                 </div>
                 
-                <div class="col s12 m12 l12">
-                    <div id="the_team" class="scrollspy " style="margin-bottom: 25%;">
-                        <h1  id="team-text"  class="team-text" style="padding: 2%;">The Team</h1>
-                        <div style="padding: 2%;font-size: 1.1rem;">
-                            <div class="centered" style="width: 100%; margin: auto; max-width: 200px; margin-bottom: 20px;">
-                                <a id="team-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSes_pbYmFdp1qYfH57E2YhMA16B8o5uYmjXt_Sng5Pug0Xzqg/viewform?usp=sf_link"><div class="button -regular center">Join the team</div></a>    
-                            </div>
-        
-                            <h4 style="font-size: 1.25rem; margin-top: 5%;">We will be updating this section soon. <br> Till then, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><span style="color: #d52d30;">Join the Team.</span></a></h4>
-                        </div>
-                        
+            </div>
+
+            <!-- <div id="details" class="details section scrollspy " style="margin-bottom: 25%;">
+                <h1 class="sponsor-text" style="padding: 2%;">Contact Us</h1>
+                <div style="padding: 2%;font-size: 1.1rem;">
+                    <div class="grid-container-small centered" style="width: 100%;">
+                        <a id=""  target="_blank" href="#"><div class="button -regular center">Contact us </div></a>    
                     </div>
                 </div>
+                
+            </div> -->
 
+            <div id="the_team" class="details section scrollspy " style="margin-bottom: 25%;">
+                <h1 class="sponsor-text" style="padding: 2%;">The Team</h1>
+                <div style="padding: 2%;font-size: 1.1rem;">
+                    <div class="grid-container-small centered" style="width: 100%;">
+                        <a id="" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSes_pbYmFdp1qYfH57E2YhMA16B8o5uYmjXt_Sng5Pug0Xzqg/viewform?usp=sf_link"><div class="button -regular center">Join the team</div></a>    
+                    </div>
+
+                    <h4 style="font-size: 1.25rem;">We will be updating this section soon. <br> Till then, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><span style="color: #d52d30;">Join the Team.</span></a></h4>
+                </div>
+                
             </div>
+
+            <!-- <div id="details" class="details section scrollspy " style="margin-bottom: 25%;">
+                <h1 class="sponsor-text" style="padding: 10% 2%;">Hackathon Details</h1>
+                <a id="conduct2" href="#"><div style="padding: 2%;font-size: 1.4rem; text-align: left; color: #eeeeee;">We'll be coming forward with the details soon. Till then, <span style="color: #d52d30;">Stay updated</span>.</div></a> 
+            </div> -->
         </div>
     </div>
- 
     
-
-    
-
-
-    
-    <div style=" background-color: #212121; height: 37.5px; width: 100%; position: fixed; bottom: 0; text-align: center; padding-top: 5px;">
+    <div style="  background-color: #212121; height: 37.5px; width: 100%; position: fixed; bottom: 0; text-align: center; padding-top: 5px;">
             <a target="_blank" href="http://codezoned.com"><div style="color: #eeeeee; font-family: profontwindows; font-size: 19px;">With <span class="pulsate">&#x2764;</span> by <span style="color: #d52d30; font-size: 22px;">code</span><span style="color: white;font-size: 22px;">zoned</span><span style="color: #767777; font-size: 22px;">;</span></div></a>
     </div>
         <!-- d52d30
@@ -451,24 +478,22 @@
         const ss = document.querySelectorAll('.scrollspy');
         M.ScrollSpy.init(ss, {});
 
-        // var targetOffset = $("#anchor-point").offset().top;
-        // var logodiv = getElementByClassName('logo-div')
-        
+        var targetOffset = $("#anchor-point").offset().top;
+
         // var $w = $(window).scroll(function(){
         //     if ( (screen.height<=1200) && ($w.scrollTop() > targetOffset-500) ) {  
-        //         $('.logo-div').hide(10);
+        //         $('.logo-div').hide(500);
         //     } 
         //     else if ( (screen.height<=1600) && ($w.scrollTop() > targetOffset-350) ) {  
                 
-        //         $('.logo-div').hide(10);
+        //         $('.logo-div').hide(750);
         //     }
         //     else if ( (screen.height>1600) && ($w.scrollTop() > targetOffset- 900) ) {  
-        //         $('.logo-div').hide(10);
+        //         $('.logo-div').hide(1750);
         //     }
         //     else {
-        //         $('.logo-div').show(10);
-        //         $('.logo-div').css({"position":"fixed"});
-
+        //         $('.logo-div').show(500);
+        //         // $('.logo-div').css({"position":"fixed"});
         //     }
         // });
 
@@ -484,10 +509,6 @@
             // }
         // });
 
-        sponsor_id = document.getElementById('sponsor-text');
-        speaker_id = document.getElementById('sponsor-text');
-        team_id = document.getElementById('sponsor-text');
-                
         $(function() {
             $('.-regular').hover(function() {
                 $('#codeit').css('color', '#d52d30');
@@ -496,32 +517,6 @@
                 $('#codeit').css('color', 'white');
             });
         });
-
-        $(function() {
-            $('#speaker-btn').hover(function() {
-                $('#speaker-text').css('color', '#d52d30');
-            }, function() {
-                // on mouseout, reset the background colour
-                $('#speaker-text').css('color', 'white');
-            });
-        });$(function() {
-            $('#sponsor-btn').hover(function() {
-                $('#sponsor-text').css('color', '#d52d30');
-            }, function() {
-                // on mouseout, reset the background colour
-                $('#sponsor-text').css('color', '#070707');
-            });
-        });
-        $(function() {
-            $('#team-btn').hover(function() {
-                $('#team-text').css('color', '#d52d30');
-            }, function() {
-                // on mouseout, reset the background colour
-                $('#team-text').css('color', 'white');
-            });
-        });
-
-
 
         $('#conduct1').click( function() { alert("The form is comin' up. Stay seated!"); });
         $('#conduct2').click( function() { alert("The form is comin' up. Stay seated!"); });
@@ -546,15 +541,6 @@
                     window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
                 });
             }
-        });
-
-        $(window).scroll(function(){
-            var scroll_top = $(this).scrollTop(); // get scroll position top
-            var height_element_parent =  $("#theFixed").parent().outerHeight(); //get high parent element
-            var height_element = $("#theFixed").height() + 150; //get high of elemeneto
-            var position_fixed_max = height_element_parent - height_element; // get the maximum position of the elemen
-            var position_fixed = scroll_top < 150 ? 150 - scroll_top : position_fixed_max > scroll_top ? 100 : position_fixed_max - scroll_top ;
-            $("#theFixed").css("top",position_fixed);
         });
 
     </script>
