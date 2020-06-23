@@ -37,10 +37,13 @@ body {
 .logo-div {
 	width: 47.5%;
 	margin: auto;
-	position: fixed;
+	/* position: fixed; */
 	/* height: 100%; */
 	/* overflow-y: scroll; */
 	/* overflow-x: hidden; */
+}
+#theFixed {
+	position: fixed;
 }
 
 .logo-img {
@@ -111,28 +114,60 @@ body {
 	width: 100%;
 }
 .sponsor-logos {
-	width: 60%;
+	width: 47.5%;
 }
 .sponsor-logos-2 {
-	width: 75%;
+	width: 50%;
 }
 
 .sponsor-text {
-	font-size: 2em;
+	font-size: 4em;
 	font-family: quicksand;
-	color: #eeeeee;
-	text-align: left;
+	color: #070707;
+	text-align: center;
 	/* padding-left: 5%; */
 
 	margin-top: 5%;
 	margin-bottom: 1%;
 }
+.about-text {
+	font-size: 2em;
+	font-family: quicksand;
+	color: #eeeeee;
+	text-align: center;
+	/* padding-left: 5%; */
+
+	margin-top: 27.5%;
+	margin-bottom: 0;
+}
+
+.team-text {
+	font-size: 2em;
+	font-family: quicksand;
+	color: #eeeeee;
+	text-align: center;
+	/* padding-left: 5%; */
+
+	margin-top: 17.5%;
+	margin-bottom: 0;
+}
+
+.faq-text {
+	font-size: 2em;
+	font-family: quicksand;
+	color: #eeeeee;
+	text-align: center;
+	/* padding-left: 5%; */
+
+	margin-top: 27.5%;
+	margin-bottom: 0;
+}
 
 .part-sponsor-text {
 	font-size: 1.375em;
 	font-family: quicksand;
-	color: #eeeeee;
-	text-align: left;
+	color: #070707;
+	text-align: center;
 	/* padding-left: 5%; */
 
 	margin-top: 5%;
@@ -144,6 +179,21 @@ body {
 	/* padding-bottom: 30%; */
 	padding-right: 17.5%;
 	text-align: justify;
+}
+
+.team-speaker-text {
+	font-size: 2em;
+	font-family: quicksand;
+	color: #eeeeee;
+	text-align: center;
+	/* padding-left: 5%; */
+
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+.team-speaker-buttons {
+	max-width: 200px;
 }
 
 @media screen and (min-height: 1200px) {
