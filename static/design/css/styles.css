@@ -16,6 +16,7 @@
 
 body {
 	background-color: #070707;
+	overflow-x: hidden !important;
 }
 
 .grid-container {
@@ -50,7 +51,8 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: 27.5%;
-	margin-top: 25%;
+	margin-top: 20%;
+	margin-bottom: 26%;
 	width: 50%;
 }
 
@@ -72,10 +74,11 @@ body {
 }
 
 .about-text {
-	margin-top: 80%;
+	margin-top: 70%;
 	/* padding-bottom: 30%; */
 	padding-right: 17.5%;
 	text-align: justify;
+	margin-bottom: 10%;
 }
 .about-head {
 	text-align: left;
@@ -116,8 +119,11 @@ body {
 .sponsor-logos {
 	width: 47.5%;
 }
-.sponsor-logos-2 {
-	width: 50%;
+.fold-logo {
+	width: 45%;
+}
+.matic-logo {
+	width: 70%;
 }
 
 .sponsor-text {
@@ -139,6 +145,21 @@ body {
 
 	margin-top: 27.5%;
 	margin-bottom: 0;
+}
+
+.team-speaker-text {
+	margin: 20% auto 10% auto;
+}
+
+.team-speaker-buttons {
+	margin: 0 auto 5% auto;
+}
+.team-text {
+	margin: 0 auto 0 auto;
+}
+
+.join-team {
+	margin: 15px auto 0 auto;
 }
 
 .team-text {
@@ -259,8 +280,12 @@ body {
 
 	.logo-div {
 		position: relative;
-		width: 90%;
-		margin-left: 7.5%;
+		width: 100%;
+		margin-left: 25%;
+		margin-bottom: 25px;
+	}
+	#theFixed {
+		position: relative;
 	}
 
 	.center-text-div {
@@ -334,6 +359,29 @@ body {
 		margin-bottom: 1%;
 	}
 
+	.team-speaker-text {
+		margin: 50% auto 10% auto;
+	}
+
+	.team-speaker-buttons {
+		margin: 0 auto 20% auto;
+	}
+
+	.team-container {
+		margin-top: 75%;
+	}
+	.team-text {
+		font-size: 2em;
+		font-family: quicksand;
+		color: #eeeeee;
+		text-align: center;
+		margin-top: 20%;
+		margin-bottom: 10%;
+	}
+	.join-team {
+		margin: 10% auto 20% auto;
+	}
+
 	.part-sponsor-text {
 		font-size: 1.5em;
 		font-family: quicksand;
@@ -349,6 +397,13 @@ body {
 
 	.sponsor-logos-2 {
 		width: 87.5%;
+	}
+	.fold-logo {
+		width: 80%;
+	}
+	.matic-logo {
+		width: 100%;
+		margin-bottom: 50px;
 	}
 
 	.details {
