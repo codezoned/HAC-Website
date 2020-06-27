@@ -202,6 +202,48 @@
             padding: 0 0 4px 23px;
         }
 
+        #theFixed{
+            transition: 1s ease;
+        }
+        .team-card-size{
+            background-color: white; 
+            min-height: 315px !important; 
+            margin-right: 10px; 
+            margin-bottom: 10px;
+
+        }
+        .names{
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .designation{
+            color: #070707;
+            font-size: 0.9em;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .team-card-size{
+           
+                min-height: 220px !important; 
+                margin-right: 10px !important; 
+                margin-bottom: 10px !important;
+                /* font-size: 0.75em; */
+            }
+
+            .inn{
+                min-height: 195px !important;
+            }
+            .names{
+               font-size: 0.85em;
+               font-weight: normal;
+            }
+            .designation{
+                font-size: 0.75em;
+                color: black;
+                
+            }
+        }
+
     </style>
 
 
@@ -224,11 +266,21 @@
                             <a href="#about" style="color: #e71a1a; font-size: 1.25em;">_about</a>
                         </li>
                         <li>
-                            <a href="#sponsors" style="color: #e71a1a; font-size: 1.25em;">_sponsors</a>
+                            <a href="#track" style="color: #e71a1a; font-size: 1.25em;">_tracks</a>
                         </li>
                         <li>
                             <a href="#faqs" style="color: #e71a1a; font-size: 1.25em;">_FAQs</a>
                         </li>
+                        <li>
+                            <a href="#sponsors" style="color: #e71a1a; font-size: 1.25em;">_sponsors</a>
+                        </li>
+                        <li>
+                            <a href="#speakers" style="color: #e71a1a; font-size: 1.25em;">_judges</a>
+                        </li>
+                        <li>
+                            <a href="#the_team" style="color: #e71a1a; font-size: 1.25em;">_team</a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -236,17 +288,26 @@
     </div>
 
     <ul class="sidenav" id="mobile-nav" style=" font-family: profontwindows;">
-        <li style="display: none;">
-            <a href="#about" style="color: #e71a1a;">home</a>
+        <li  style="display: none;">
+            <a href="#home" style="color: #e71a1a;">home</a>
         </li>
         <li>
             <a href="#about" style="color: #e71a1a; font-size: 1.25em;">_about</a>
         </li>
         <li>
-            <a href="#sponsors" style="color: #e71a1a; font-size: 1.25em;">_sponsors</a>
+            <a href="#track" style="color: #e71a1a; font-size: 1.25em;">_tracks</a>
         </li>
         <li>
             <a href="#faqs" style="color: #e71a1a; font-size: 1.25em;">_FAQs</a>
+        </li>
+        <li>
+            <a href="#sponsors" style="color: #e71a1a; font-size: 1.25em;">_sponsors</a>
+        </li>
+        <li>
+            <a href="#speakers" style="color: #e71a1a; font-size: 1.25em;">_judges</a>
+        </li>
+        <li>
+            <a href="#the_team" style="color: #e71a1a; font-size: 1.25em;">_team</a>
         </li>
     </ul>
 
@@ -268,8 +329,8 @@
                 </div>
             </div>
 
-            <div id="about" class="section scrollspy about-text" style="width: 100%;">
-                <h1 class="about-text" style="padding: 10% 2%;">About</h1>
+            <div class="section scrollspy about-text" style="width: 100%;">
+                <h1 id="about" class="about-text" style="padding: 10% 2%;">About</h1>
                 <div style="padding: 2%;font-size: 1.1rem;">
                     HAC (Hack Against Covid) is a virtual hackathon that challenges students to build proactive technology and solutions to safeguard human interaction in the up and coming post covid19 world.
                     <br><br> <p style="text-align: center;"><i>“The uncreative mind can spot wrong answers, but it takes a very creative mind to spot wrong questions.” ― Anthony Jay. </i></p> <br>
@@ -282,30 +343,30 @@
                 </div>
             </div>
 
-            <div id="about" class="section scrollspy about-text" style="width: 100%; text-align: justify;">
-                <h1 class="about-text" style="padding: 10% 2%;">Gist</h1>
+            <div class="section scrollspy about-text" style="width: 100%;">
+                <h1  id="track" class="about-text" style="padding: 10% 2%;">Tracks</h1>
                 <div style="padding: 2%;font-size: 1.1rem;">
-                    We’ll be suggesting the below four themes to help spark your ideas. Remember that you’re welcome to build with the technologies of your choice, across any areas that you think would drive impact for these issues, so feel free to think outside the box too!
+                    We’ll be <b> suggesting</b> the below four themes to help spark your ideas. Remember that you’re welcome to build with the technologies of your choice, across any areas that you think would drive impact for these issues, so feel free to think outside the box too!
                     <br><br>
                     <ul class="gist-list">
                         <li>
-                            1. Health: Address a spectrum of health initiatives, including preventative/hygiene behaviors, supporting frontline health workers, treatment and diagnosis development and more!
-                        </li><br> <br>
+                            <b>Health </b><br> Address a spectrum of health initiatives, including preventative/hygiene behaviors, supporting frontline health workers, treatment and diagnosis development and more!
+                        </li><br> <br><br>
                         <li>
-                            2. Businesses: Help businesses stay afloat, build new ways managing supply chains, and move parts of their business online.
-                        </li> <br>
+                            <b>Businesses</b> <br> Help businesses stay afloat, build new ways managing supply chains, and move parts of their business online.
+                        </li> <br><br>
                         <li>
-                            3. Education: Alternative learning environments and tools for students, teachers, and entire school systems.
-                        </li>  <br>
+                            <b>Education</b> <br> Alternative learning environments and tools for students, teachers, and entire school systems.
+                        </li>  <br><br>
                         <li>
-                            4. Other: The above themes are just suggestions. Feel empowered to get creative!
+                            <b>Other</b> <br> The above themes are just suggestions. Feel empowered to get creative!
                         </li>  <br>
                     </ul>
                 </div>
             </div>
 
-            <div id="faqs" class="section scrollspy about-text" style="margin-top: 45%; margin-bottom: 15%;">
-                <h1 class="faq-text" style="padding-top: 10%; padding-bottom: 2%; padding-left: 2%; padding-right: 2%;">FAQs</h1>
+            <div class="section scrollspy about-text" style="margin-top: 45%; margin-bottom: 15%;">
+                <h1 id="faqs" class="faq-text" style="padding-top: 10%; padding-bottom: 2%; padding-left: 2%; padding-right: 2%;">FAQs</h1>
                 <div style="padding: 2%;font-size: 1.1rem;">
                     <br><b>1.  	Who can attend? </b> <br>
                     Students, professionals, and anybody who is passionate about coding are welcome to contribute and participate in Hack Against Covid (HAC)
@@ -401,7 +462,7 @@
 
                                     <div class="card-content white-text" style="padding-bottom: 10px;">
                                         <span class="card-title names" style="color: black;"><strong>Aaron Burdick</strong></span>
-                                        <p style="color: #070707; font-size: 0.9em;">Full-stack Developer, Zeals, Tokyo</p>
+                                        <p style="color: #070707;">Full-stack Developer, Zeals, Tokyo</p>
                                     </div>
                                 </div> 
                                 
@@ -425,7 +486,7 @@
                                     </div>
                                     <div class="card-content white-text" style="padding-bottom: 10px;">
                                         <span class="card-title names" style="color: black;"><strong>Sagar Vakkala</strong></span>
-                                        <p style="color: #070707; font-size: 0.9em;">Founder, Codezoned;</p>
+                                        <p style="color: #070707;">Founder, Codezoned;</p>
                                     </div>
                                 </div>
 
@@ -451,18 +512,18 @@
                                 <div class="col-md-4 col-lg-8 animated bounceInLeft" id="animate2">
                                     <div class="row">
                                         
-                                        <div class="col s5 offset-s1 m2 offset-m1" style="background-color: white;  min-height: 325px; margin-right: 10px; margin-bottom: 10px;">
+                                        <div class="col s5 offset-s1 m2 offset-m1 team-card-size inn" style="">
                                             <div class="card darken-1">
                                                 <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
-                                                    <img src="static/design/images/speakers/sagar-wakawaka-resized.jpg" style="">      
+                                                    <img src="static/design/images/team/sagar2.jpg" style="">      
                                                 </div>
                                             </div>
                                             <div class="card-content white-text" style="padding-bottom: 10px;">
                                                 <span class="card-title names" style="color: black;"><strong>Sagar Vakkala</strong></span>
-                                                <p style="color: #070707; font-size: 0.9em;">Lead organiser</p>
+                                                <p class="designation" style="color: #070707;">Lead organiser</p>
                                             </div>
                                         </div>
-                                        <div class="col s5 m2" style="background-color: white; min-height: 325px; margin-right: 10px; margin-bottom: 10px;">
+                                        <div class="col s5 m2 team-card-size inn" style="">
                                             <div class="card darken-1">
                                                 <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
                                                     <img src="static/design/images/team/aniket2.jpg" style="">      
@@ -470,10 +531,10 @@
                                             </div>
                                             <div class="card-content white-text" style="padding-bottom: 10px;">
                                                 <span class="card-title names" style="color: black;"><strong>Aniket Mishra</strong></span>
-                                                <p style="color: #070707; font-size: 0.9em;">Lead technical team</p>
+                                                <p class="designation" style="color: #070707;">Lead technical team</p>
                                             </div>
                                         </div>
-                                        <div class="col s5 offset-s1 m2" style="background-color: white; min-height: 325px; margin-right: 10px; margin-bottom: 10px;">
+                                        <div class="col s5 offset-s1 m2 team-card-size" style="">
                                             <div class="card darken-1">
                                                 <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
                                                     <img src="static/design/images/team/paakhi.jpeg" style="">      
@@ -482,11 +543,11 @@
         
                                             <div class="card-content white-text" style="padding-bottom: 10px;">
                                                 <span class="card-title names" style="color: black;"><strong>Anindita Sarkar</strong></span>
-                                                <p style="color: #070707; font-size: 0.9em;">Lead marketing and design</p>
+                                                <p class="designation" style="color: #070707;">Lead marketing and design</p>
                                             </div>
                                         </div> 
                                         
-                                        <div class="col s5 m2" style="background-color: white; min-height: 325px; margin-right: 10px; margin-bottom: 10px;">
+                                        <div class="col s5 m2 team-card-size" style="">
                                             <div class="card darken-1">
                                                 <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
                                                     <img src="static/design/images/team/sadachiichan.jpeg" style="">      
@@ -494,23 +555,23 @@
                                             </div>
                                             <div class="card-content white-text" style="padding-bottom: 10px;">
                                                 <span class="card-title names" style="color: black;"><strong>Sadakshi Kalyanraman</strong></span>
-                                                <p style="color: #070707; font-size: 0.9em;">Lead Sponsorships and relations</p>
+                                                <p class="designation" style="color: #070707;">Lead Sponsorships and relations</p>
                                             </div>
                                         </div> 
                                         
                                         
-                                        <div class="col s5 offset-s1 m2" style="background-color: white;  min-height: 325px; margin-right: 10px; margin-bottom: 10px;">
+                                        <div class="col s5 offset-s1 m2 team-card-size" style="">
                                             <div class="card darken-1">
                                                 <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
-                                                    <img src="static/design/images/team/arka.jpg" style="">      
+                                                    <img src="static/design/images/team/arka2.jpg" style="">      
                                                 </div>
                                             </div>
                                             <div class="card-content white-text" style="padding-bottom: 10px;">
                                                 <span class="card-title names" style="color: black;"><strong>Arka Dasgupta</strong></span>
-                                                <p style="color: #070707; font-size: 0.9em;">Marketing and design</p>
+                                                <p class="designation" style="color: #070707;">Marketing and design</p>
                                             </div>
                                         </div>
-                                        <div class="col s5 m2 offset-m1" style="background-color: white;  min-height: 325px; margin-right: 10px; margin-bottom: 10px;">
+                                        <div class="col s5 m2 offset-m1 team-card-size" style="">
                                             <div class="card darken-1" style="">
                                                 <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
                                                     <img src="static/design/images/team/swaaz.jpg" style="">      
@@ -518,29 +579,29 @@
                                             </div>
                                             <div class="card-content white-text" style="padding-bottom: 10px;">
                                                 <span class="card-title names" style="color: black;"><strong>Swasthik Shetty </strong></span>
-                                                <p style="color: #070707; font-size: 0.9em;">Technical Team</p>
+                                                <p class="designation" style="color: #070707;">Technical Team</p>
                                             </div>
                                         </div>
-                                        <div class="col s5 offset-s1 m2" style="background-color: white;  min-height: 325px; margin-right: 10px; margin-bottom: 10px;">
+                                        <div class="col s5 offset-s1 m2 team-card-size inn" style="">
                                             <div class="card darken-1">
                                                 <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
-                                                    <img src="static/design/images/team/senthil.png" style="">      
+                                                    <img src="static/design/images/team/senthil2.png" style="">      
                                                 </div>
                                             </div>
                                             <div class="card-content white-text" style="padding-bottom: 10px;">
                                                 <span class="card-title names" style="color: black;"><strong>M. Senthil Kumar</strong></span>
-                                                <p style="color: #070707; font-size: 0.9em;">Technical team</p>
+                                                <p class="designation" style="color: #070707;">Technical team</p>
                                             </div>
                                         </div>
-                                        <div class="col cs5 m2" style="background-color: white;  min-height: 325px; margin-right: 10px; margin-bottom: 10px;">
+                                        <div class="col s5 m2 team-card-size inn" style="">
                                             <div class="card darken-1">
                                                 <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
-                                                    <img src="static/design/images/team/nupur.jpg" style="">      
+                                                    <img src="static/design/images/team/nupur2.jpg" style="">      
                                                 </div>
                                             </div>
                                             <div class="card-content white-text" style="padding-bottom: 10px;">
                                                 <span class="card-title names" style="color: black;"><strong>Nupur Khanter</strong></span>
-                                                <p style="color: #070707; font-size: 0.9em;">Marketing and design</p>
+                                                <p class="designation" style="">Marketing and design</p>
                                             </div>
                                         </div>
         
@@ -569,7 +630,7 @@
 
     
     <div style=" background-color: #212121; height: 37.5px; width: 100%; position: fixed; bottom: 0; text-align: center; padding-top: 5px;">
-            <a target="_blank" href="http://codezoned.com"><div style="color: #eeeeee; font-family: profontwindows; font-size: 19px;">With <span class="pulsate">&#x2764;</span> by <span style="color: #d52d30; font-size: 22px;">code</span><span style="color: white;font-size: 22px;">zoned</span><span style="color: #767777; font-size: 22px;">;</span></div></a>
+            <a target="_blank" href="http://codezoned.com"><div style="color: #eeeeee; font-family: profontwindows; font-size: 19px;">With <span class="pulsate" style="color: d52d30;">&#x2764;</span> by <span style="color: #d52d30; font-size: 22px;">code</span><span style="color: white;font-size: 22px;">zoned</span><span style="color: #767777; font-size: 22px;">;</span></div></a>
     </div>
         <!-- d52d30
         white
@@ -713,7 +774,7 @@
                 var height_element = $("#theFixed").height() + 150; //get high of elemeneto
                 var position_fixed_max = height_element_parent - height_element; // get the maximum position of the elemen
                 var position_fixed = scroll_top < 150 ? 150 - scroll_top : position_fixed_max > scroll_top ? 100 : position_fixed_max - scroll_top ;
-                $("#theFixed").css("top",position_fixed);
+                $("#theFixed").delay(800).css("top",position_fixed);
             });
         }
                 

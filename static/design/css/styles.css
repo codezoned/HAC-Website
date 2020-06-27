@@ -51,7 +51,7 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: 27.5%;
-	margin-top: 20%; 
+	margin-top: 20%;
 	margin-bottom: 26%;
 	width: 50%;
 }
@@ -74,10 +74,11 @@ body {
 }
 
 .about-text {
-	margin-top: 80%;
+	margin-top: 70%;
 	/* padding-bottom: 30%; */
 	padding-right: 17.5%;
 	text-align: justify;
+	margin-bottom: 10%;
 }
 .about-head {
 	text-align: left;
