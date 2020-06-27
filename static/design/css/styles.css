@@ -154,6 +154,13 @@ body {
 	margin-bottom: 0;
 }
 
+.team-container {
+	margin-top: 10%;
+}
+.speaker-container {
+	margin-bottom: 10%;
+}
+
 .team-speaker-text {
 	margin: 20% auto 10% auto;
 }
