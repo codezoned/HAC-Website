@@ -281,7 +281,8 @@ body {
 	.logo-div {
 		position: relative;
 		width: 100%;
-		margin-left: 20%;
+		margin-left: 25%;
+		margin-bottom: 25px;
 	}
 	#theFixed {
 		position: relative;
