@@ -15,245 +15,6 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<title>HAC 2020</title>
 
-    <style>
-
-        body{
-            overflow-x: hidden !important;
-        }
-        
-        ul{
-            height: 45px;
-        }
-        ul li{
-            height: 45px;
-        }
-
-        ul li a{
-            height: 45px;
-        }
-
-        .button-container {
-            display: flex;
-
-            margin: 5px auto;
-
-            flex-wrap: wrap;
-            justify-content: left;
-        }
-        .button {
-            display: flex;
-            overflow: hidden;
-
-            /* margin: 4px 10px; */
-            padding: 8px 20px;
-
-            cursor: pointer;
-            user-select: none;
-            transition: all 150ms linear;
-            text-align: center;
-            white-space: nowrap;
-            text-decoration: none !important;
-            text-transform: none;
-            text-transform: capitalize;
-
-            color: #fff;
-            /* border: 0 none; */
-            /* border-radius: 4px; */
-
-            font-size: 15px;
-            font-weight: 500;
-            line-height: 1.4;
-
-            -webkit-appearance: none;
-            -moz-appearance:    none;
-            appearance:         none;
-
-            justify-content: center;
-            align-items: center;
-            flex: 0 0 180px;
-
-            box-shadow: 2px 5px 10px var(--color-smoke);
-
-
-        }
-
-
-        .button.-regular {
-            color: white;
-            background: none;
-            border: solid white 2px;
-
-        }
-        .button.-regular2 {
-            color: black;
-            background: none;
-            border: solid black 2px;
-
-        }
-
-        .div-outer {
-            position: relative;
-            background: pink;
-            height: 800px;
-            margin-bottom: 800px;
-        }
-        .div-inner {
-            position: fixed;
-            right: 0;
-            bottom: 50px;
-            width: 10%;
-            height: calc(100vh - 100px);
-            background: gold;
-        }
-        .bottom-div {
-            position: absolute;
-            bottom: 0;
-        }
-
-        .button.-regular:hover {
-            color: #d52d30;
-            background: none;
-            border: solid #d52d30 2px;
-            
-        }
-        .button.-regular2:hover {
-            color: #d52d30;
-            background: none;
-            border: solid #d52d30 2px;
-            
-        }
-
-
-        .pulsate {
-            -webkit-animation: pulsate 3s ease-out;
-            -webkit-animation-iteration-count: infinite; 
-            opacity: 0.5;
-        }
-        @-webkit-keyframes pulsate {
-            0% { 
-                opacity: 0.5;
-            }
-            50% { 
-                opacity: 1.0;
-            }
-            100% { 
-                opacity: 0.5;
-            }
-        }
-
-        @keyframes shadow-pulse
-        {
-            0% {
-                box-shadow: 255 255 255 0px rgba(0, 0, 0, 0.2);
-            }
-            100% {
-                box-shadow: 255 255 255 45px rgba(0, 0, 0, 0);
-            }
-        }
-
-        .image-ripple
-        {
-            animation: shadow-pulse 1s infinite;
-        }
-
-        .row{
-            margin: 0 !important
-        }
-
-
-        /* #devfolio-apply-now {
-            -ms-flex-align: center;
-            -webkit-box-align: center;
-            align-items: center;
-            background-color: #3770FF; */
-            /* border-radius: 3px; */
-            /* border: none; */
-            /* color: #FFFFFF;
-            
-            cursor: pointer;
-            display: -ms-flexbox;
-            display: -webkit-box;
-            display: flex;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-            font-size: 18px;
-            font-weight: 600;
-            padding: 12px 20px;
-            text-align: center;
-            text-transform: lowercase;
-        }
-
-        #devfolio-apply-now:not([disabled]) {
-            cursor: pointer;
-        }
-
-        #devfolio-apply-now:hover {
-            /* background-color: #2954BF !important; 
-        } */
-
-        .flex {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .names{
-            font-weight: 800;
-            font-size: 1.15em;
-            
-        }
-
-        .gist-list li{
-            list-style-Type: none;
-            padding: 0 0 4px 23px;
-        }
-
-        #theFixed{
-            transition: 1s ease;
-        }
-        .team-card-size{
-            background-color: white; 
-            min-height: 315px !important; 
-            margin-right: 10px; 
-            margin-bottom: 10px;
-
-        }
-        .names{
-            font-size: 1em;
-            font-weight: bold;
-        }
-        .designation{
-            color: #070707;
-            font-size: 0.9em;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .team-card-size{
-           
-                min-height: 220px !important; 
-                margin-right: 10px !important; 
-                margin-bottom: 10px !important;
-                /* font-size: 0.75em; */
-            }
-
-            .smaller-card{
-                min-height: 195px !important;
-            }
-            .bigger-card{
-                min-height: 235px !important;
-            }
-            .names{
-               font-size: 0.75em;
-               
-            }
-            .designation{
-                font-size: 0.75em;
-                
-                
-            }
-        }
-
-    </style>
-
-
 </head>
 <body>
 
@@ -294,7 +55,7 @@
         </nav>
     </div>
 
-    <ul class="sidenav" id="mobile-nav" style=" font-family: profontwindows;">
+    <ul class="sidenav" id="mobile-nav">
         <li  style="display: none;">
             <a href="#home" style="color: #e71a1a;">home</a>
         </li>
@@ -405,9 +166,9 @@
 
     <div class="row">
 
-        <div class="col s12 m12 l12"  style="text-align: center; color: #070707; background-color: #eeeeee; padding-bottom: 7.5%;">
+        <div class="col s12 m12 l12 sponsor-row" >
             <div id="sponsors" class="scrollspy" style="width: 100%;">
-                <h1 id="sponsor-text" class="sponsor-text" style="padding: 2%; color: #070707;">Sponsors</h1>
+                <h1 id="sponsor-text" class="sponsor-text" style="padding: 2%;">Sponsors</h1>
                 <div style="font-size: 1.1rem;">
                     <div class="centered" style=" color: #070707; max-width: 200px; margin: auto;">
                         <a id="sponsor-btn"  target="_blank" href="https://forms.gle/PJHSidndo9mLsJUu8"><div class="button -regular2 center">Become a sponsor</div></a>    
@@ -416,40 +177,40 @@
                 
                 <div class="row">
                     <div class="col s12">
-                        <h2 class="part-sponsor-text" style="padding: 2%; margin-top: 5%; color: #070707">Title Sponsor:-</h2>
+                        <h2 class="part-sponsor-text title-sponsor">Title Sponsor:-</h2>
                     </div>
                     <div class="col s10 offset-s1 m12">
                         <a target="_blank" href="https://github.com"><img class="sponsor-logos" src="static/design/images/githublogoblack.png" alt="Github"></a>
-                    </div><br>
+                    </div>
 
                     <div class="col s10 offset-s1  m12"><br>
-                        <h2 class="part-sponsor-text" style="padding: 2%; margin-top: 5%; margin-bottom: 10%; color: #070707">Platinum Sponsors:-</h2>
+                        <h2 class="part-sponsor-text">Platinum Sponsors:-</h2>
                         <a target="_blank" href="https://devfolio.co/home/"><img class="sponsor-logos-2" src="static/design/images/Devfolio-Dark.png" alt="Devfolio"></a>
-                    </div><br>
+                    </div>
 
                     <div class="col s12">
-                        <h2 class="part-sponsor-text" style="padding: 2%; margin-top: 15%; margin-bottom: 5%; color: black;">Gold Sponsors:-</h2>
+                        <h2 class="part-sponsor-text" style="margin-top: 12.5%; margin-bottom: 5%;">Gold Sponsors:-</h2>
                     </div>
                     <div class="col s10 offset-s1 m6"><br>
                         <a target="_blank" href="https://matic.network/"><img class="matic-logo" src="static/design/images/Matic-Network_Logo.png" alt="Matic"></a>
-                    </div> <br>
+                    </div> 
                     <div class="col s10 offset-s1 m6">
                         <a target="_blank" href="https://matic.network/"><img class="fold-logo" src="static/design/images/fold-logo.svg" alt="Matic"></a>
-                    </div><br>
+                    </div>
 
-                    <div class="col s12 m12 l12 row">
+                    <div class="col s12 row" style="padding-top: 7.5%;">
 
                         <div class="col s10 offset-s1 m6 l6"><br>
                             <a target="_blank" href="https://www.wolframalpha.com/"><img class="matic-logo" src="static/design/images/Hackathon_Logo_Wolfram_2020_Vector-removebg.png" alt="Wolfram"></a>
-                        </div> <br>
-                        <div class="col s10 offset-s1 m6 l6"><br>
+                        </div> 
+                        <div class="col s10 offset-s1 m6 l6" style="padding-top: 2.75%;">
                             <a target="_blank" href="https://www.echoar.xyz/"><img class="echo-logo" src="static/design/images/echoAR_-_Logo_2020_-_Dark.png" alt="echoAR"></a>
                         </div> <br>
                     </div>
 
-                    <div class="col s10 offset-s1  m12"><br>
-                        <h2 class="part-sponsor-text" style="padding: 2%; margin-top: 4%; margin-bottom: 2%; color: #070707">Bronze Sponsors:-</h2>
-                        <a target="_blank" href="https://www.linode.com/"><img class="linode-logo" src="static/design/images/linode-logo-blk-rgb-minified.svg" alt="Linode" style="width: 50%;"></a>
+                    <div class="col s10 offset-s1 m12"><br>
+                        <h2 class="part-sponsor-text" style="margin-top: 7.5%; margin-bottom: 2%;">Bronze Sponsors:-</h2>
+                        <a target="_blank" href="https://www.linode.com/"><img class="linode-logo" src="static/design/images/linode-logo-blk-rgb-minified.svg" alt="Linode" style="width: 40%;"></a>
                     </div><br>
                     <!-- <div>
                         <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="">
@@ -501,7 +262,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col s5 m2 offset-s1 team-card-size smaller-card">
+                                <div class="col s5 m2 offset-s1 team-card-size">
                                     <div class="card darken-1">
                                         <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
                                             <img src="static/design/images/team/sagar3.jpg">      
@@ -513,7 +274,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col s5 m2 team-card-size smaller-card">
+                                <div class="col s5 m2 team-card-size">
                                     <div class="card darken-1">
                                         <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
                                             <img src="static/design/images/speakers/Alon_Grinshpoon.png">      
@@ -645,6 +406,17 @@
                                         <div class="card-content white-text" style="padding-bottom: 10px;">
                                             <span class="card-title names" style="color: black;"><b>Mohammad Zafeer</b></span>
                                             <p class="designation">Merch Dev & Design</p>
+                                        </div>
+                                    </div>
+                                    <div class="col s5 m2 team-card-size smaller-card">
+                                        <div class="card darken-1">
+                                            <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                                <img src="static/design/images/team/kevin3.jpg">      
+                                            </div>
+                                        </div>
+                                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                                            <span class="card-title names" style="color: black;"><b>Kevin Issac John</b></span>
+                                            <p class="designation">Marketing & Design</p>
                                         </div>
                                     </div>
 
