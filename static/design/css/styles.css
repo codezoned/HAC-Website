@@ -318,8 +318,6 @@ ul li a {
 	width: 80%;
 	margin-bottom: 50px;
 }
-.sponsor-headers {
-}
 
 .sponsor-text {
 	font-size: 4em;
@@ -604,7 +602,8 @@ ul li a {
 		width: 87.5%;
 	}
 	.linode-logo {
-		width: 50%;
+		width: 100% !important;
+		padding-bottom: 50px;
 	}
 	.fold-logo {
 		width: 80%;
@@ -619,7 +618,7 @@ ul li a {
 		margin-bottom: 50px;
 	}
 	.echo-logo {
-		width: 100%;
+		width: 90%;
 		margin-bottom: 50px;
 	}
 	.details {
