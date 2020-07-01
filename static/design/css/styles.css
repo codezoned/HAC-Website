@@ -398,14 +398,25 @@ body {
 	.sponsor-logos-2 {
 		width: 87.5%;
 	}
+	.linode-logo{
+		width: 50%;
+	}
 	.fold-logo {
 		width: 80%;
+		margin-bottom: 50px;;
+	}
+	.wolfram-logo {
+		width: 80%;
+		margin-bottom: 50px;;
 	}
 	.matic-logo {
 		width: 100%;
 		margin-bottom: 50px;
 	}
-
+	.echo-logo {
+		width: 80%;
+		margin-bottom: 50px;
+	}
 	.details {
 		margin-top: 10%;
 		/* padding-bottom: 30%; */
