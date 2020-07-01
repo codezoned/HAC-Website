@@ -6,7 +6,8 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<script data-ad-client="ca-pub-9081442854048209" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<link rel="stylesheet" href="static\design\css/styles.css">
+    <link rel="stylesheet" href="static\design\css/styles.css">
+    <link rel="icon" type="image/ico" href="static\design\images\icon.png"/>
 	<!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -16,7 +17,10 @@
 
     <style>
 
-
+        body{
+            overflow-x: hidden !important;
+        }
+        
         ul{
             height: 45px;
         }
@@ -197,6 +201,56 @@
             
         }
 
+        .gist-list li{
+            list-style-Type: none;
+            padding: 0 0 4px 23px;
+        }
+
+        #theFixed{
+            transition: 1s ease;
+        }
+        .team-card-size{
+            background-color: white; 
+            min-height: 315px !important; 
+            margin-right: 10px; 
+            margin-bottom: 10px;
+
+        }
+        .names{
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .designation{
+            color: #070707;
+            font-size: 0.9em;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .team-card-size{
+           
+                min-height: 220px !important; 
+                margin-right: 10px !important; 
+                margin-bottom: 10px !important;
+                /* font-size: 0.75em; */
+            }
+
+            .smaller-card{
+                min-height: 195px !important;
+            }
+            .bigger-card{
+                min-height: 235px !important;
+            }
+            .names{
+               font-size: 0.75em;
+               
+            }
+            .designation{
+                font-size: 0.75em;
+                
+                
+            }
+        }
+
     </style>
 
 
@@ -207,7 +261,7 @@
         <nav class="white" style="height: 55px;"> 
             <div class="container" style="height: 45px; width: 100%;  margin-top: -3px;">
                 <div class="" style="height: 45px;">
-                    <a href="#" class="logo" style=""><span>H A C</span></a>
+                    <a href="#" class="logo"><span>H A C</span></a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger">
                         <i class="material-icons" style="color: black;">menu</i>
                     </a>
@@ -219,11 +273,21 @@
                             <a href="#about" style="color: #e71a1a; font-size: 1.25em;">_about</a>
                         </li>
                         <li>
-                            <a href="#sponsors" style="color: #e71a1a; font-size: 1.25em;">_sponsors</a>
+                            <a href="#track" style="color: #e71a1a; font-size: 1.25em;">_tracks</a>
                         </li>
                         <li>
                             <a href="#faqs" style="color: #e71a1a; font-size: 1.25em;">_FAQs</a>
                         </li>
+                        <li>
+                            <a href="#sponsors" style="color: #e71a1a; font-size: 1.25em;">_sponsors</a>
+                        </li>
+                        <li>
+                            <a href="#speakers" style="color: #e71a1a; font-size: 1.25em;">_judges</a>
+                        </li>
+                        <li>
+                            <a href="#the_team" style="color: #e71a1a; font-size: 1.25em;">_team</a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -231,17 +295,26 @@
     </div>
 
     <ul class="sidenav" id="mobile-nav" style=" font-family: profontwindows;">
-        <li style="display: none;">
-            <a href="#about" style="color: #e71a1a;">home</a>
+        <li  style="display: none;">
+            <a href="#home" style="color: #e71a1a;">home</a>
         </li>
         <li>
             <a href="#about" style="color: #e71a1a; font-size: 1.25em;">_about</a>
         </li>
         <li>
-            <a href="#sponsors" style="color: #e71a1a; font-size: 1.25em;">_sponsors</a>
+            <a href="#track" style="color: #e71a1a; font-size: 1.25em;">_tracks</a>
         </li>
         <li>
             <a href="#faqs" style="color: #e71a1a; font-size: 1.25em;">_FAQs</a>
+        </li>
+        <li>
+            <a href="#sponsors" style="color: #e71a1a; font-size: 1.25em;">_sponsors</a>
+        </li>
+        <li>
+            <a href="#speakers" style="color: #e71a1a; font-size: 1.25em;">_judges</a>
+        </li>
+        <li>
+            <a href="#the_team" style="color: #e71a1a; font-size: 1.25em;">_team</a>
         </li>
     </ul>
 
@@ -255,21 +328,21 @@
         </div>
         <div class="col s12 m6" id="div2" >
             <div style="width: 100%;" class="center-text-div"> 
-                <div class="covid-class" style="">Code it for <span  id="codeit">Covid</span>.</div>
+                <div class="covid-class">Code it for <span  id="codeit">Covid</span>.</div>
                 <div class="grid-container-small centered" style="width: 100%;">
                     <!-- <button id="#devfolio-apply-now" class="button -regular center" style="cursor: pointer;" disabled>Apply with Devfolio</button>     -->
                     <!-- <a class="button-disabled center disabled">Apply with Devfolio</a> -->
-                    <button style="min-width: 250px; letter-spacing: 1.5px; word-spacing: 5px; margin: auto;" id="devfolio-apply-now" class="button -regular center"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button>
+                    <a href="https://hac.devfolio.co/"><button style="min-width: 250px; letter-spacing: 1.5px; word-spacing: 5px; margin: auto;" id="devfolio-apply-now" class="button -regular center"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button></a>
                 </div>
             </div>
 
-            <div id="about" class="section scrollspy about-text" style="width: 100%;">
-                <h1 class="about-text" style="padding: 10% 2%;">About</h1>
+            <div class="section about-text" style="width: 100%;">
+                <h1 id="about" class="scrollspy about-text" style="padding: 10% 2%;">About</h1>
                 <div style="padding: 2%;font-size: 1.1rem;">
                     HAC (Hack Against Covid) is a virtual hackathon that challenges students to build proactive technology and solutions to safeguard human interaction in the up and coming post covid19 world.
                     <br><br> <p style="text-align: center;"><i>“The uncreative mind can spot wrong answers, but it takes a very creative mind to spot wrong questions.” ― Anthony Jay. </i></p> <br>
-                    We at Codezoned strongly believe in this and want HAC to be a testament of the same. We are looking for creative and innovative minds that dare to ask the right questions. With lockdowns and safety measures in place, people have been left with nothing but the desire to go out and socialize. As innovators and minds of tomorrow, we want YOU to come up with technology that will help facilitate human interactions in newer ways.
-                    Come join us from the comfort of your homes to create a stronger community in these uncertain and trying times.
+                    We at Codezoned bly believe in this and want HAC to be a testament of the same. We are looking for creative and innovative minds that dare to ask the right questions. With lockdowns and safety measures in place, people have been left with nothing but the desire to go out and socialize. As innovators and minds of tomorrow, we want YOU to come up with technology that will help facilitate human interactions in newer ways.
+                    Come join us from the comfort of your homes to create a ber community in these uncertain and trying times.
                     
                     <br><br>
                     <a class="code-of-conduct" href="https://github.com/codezoned/code-of-conduct/blob/master/code-of-conduct.md" style="color: white;"><b>More details are coming along your way. But for now, please make sure you have read our <span style="color: #d52d30;"> code of conduct.</span></b></a> 
@@ -277,8 +350,29 @@
                 </div>
             </div>
 
-            <div id="faqs" class="section scrollspy about-text" style="margin-top: 45%; margin-bottom: 15%;">
-                <h1 class="faq-text" style="padding-top: 10%; padding-bottom: 2%; padding-left: 2%; padding-right: 2%;">FAQs</h1>
+            <div class="section about-text" style="width: 100%;">
+                <h1  id="track" class="scrollspy about-text" style="padding: 10% 2%;">Tracks</h1>
+                <div style="padding: 2%;font-size: 1.1rem;">
+                    We’ll be <b> suggesting</b> the below four themes to help spark your ideas. Remember that you’re welcome to build with the technologies of your choice, across any areas that you think would drive impact for these issues, so feel free to think outside the box too!
+                    <br><br>
+                    
+                            <b>Health </b><br> Address a spectrum of health initiatives, including preventative/hygiene behaviors, supporting frontline health workers, treatment and diagnosis development and more!
+                        <br> <br>
+                        
+                            <b>Businesses</b> <br> Help businesses stay afloat, build new ways managing supply chains, and move parts of their business online.
+                         <br><br>
+                        
+                            <b>Education</b> <br> Alternative learning environments and tools for students, teachers, and entire school systems.
+                          <br><br>
+                        
+                            <b>Other</b> <br> The above themes are just suggestions. Feel empowered to get creative!
+                          <br>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section about-text" style="margin-top: 45%; margin-bottom: 15%;">
+                <h1 id="faqs" class="scrollspy faq-text" style="padding-top: 10%; padding-bottom: 2%; padding-left: 2%; padding-right: 2%;">FAQs</h1>
                 <div style="padding: 2%;font-size: 1.1rem;">
                     <br><b>1.  	Who can attend? </b> <br>
                     Students, professionals, and anybody who is passionate about coding are welcome to contribute and participate in Hack Against Covid (HAC)
@@ -321,113 +415,216 @@
                 </div>
                 
                 <div class="row">
-                    <h2 class="part-sponsor-text" style="padding: 2%;">Title Sponsor:-</h2>
-                    <div class="col s12 m12">
-                        <a target="_blank" href="https://github.com"><img class="sponsor-logos" src="static/design/images/Github_Logo.png" alt="Github"></a>
+                    <div class="col s12">
+                        <h2 class="part-sponsor-text" style="padding: 2%; margin-top: 5%; color: #070707">Title Sponsor:-</h2>
+                    </div>
+                    <div class="col s10 offset-s1 m12">
+                        <a target="_blank" href="https://github.com"><img class="sponsor-logos" src="static/design/images/githublogoblack.png" alt="Github"></a>
                     </div><br>
-                    <h2 class="part-sponsor-text" style="padding: 2%;">Platinum Sponsors:-</h2>
-                    <div class="col s12 m12"><br>
+                    <div class="col s10 offset-s1  m12"><br>
+                        <h2 class="part-sponsor-text" style="padding: 2%; margin-top: 5%; margin-bottom: 10%; color: #070707">Platinum Sponsors:-</h2>
                         <a target="_blank" href="https://devfolio.co/home/"><img class="sponsor-logos-2" src="static/design/images/Devfolio-Dark.png" alt="Devfolio"></a>
                     </div><br>
-                    <h2 class="part-sponsor-text" style="padding: 2%; margin-top: 12.5%; margin-bottom: 5%;">Gold Sponsors:-</h2>
-                    <div class="col s12 m6"><br>
+                    <div class="col s12">
+                        <h2 class="part-sponsor-text" style="padding: 2%; margin-top: 15%; margin-bottom: 5%; color: black;">Gold Sponsors:-</h2>
+                    </div>
+                    <div class="col s10 offset-s1 m6"><br>
                         <a target="_blank" href="https://matic.network/"><img class="matic-logo" src="static/design/images/Matic-Network_Logo.png" alt="Matic"></a>
                     </div> <br>
-                    <div class="col s12 m6">
+                    <div class="col s10 offset-s1 m6">
                         <a target="_blank" href="https://matic.network/"><img class="fold-logo" src="static/design/images/fold-logo.svg" alt="Matic"></a>
                     </div>
                     <!-- <div>
-                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
+                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="">
                     </div>
                     <div>
-                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="" style="">
+                        <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="">
                     </div> -->
                 </div>
             </div> 
         </div>
 
-        <div class="col s12 m12 l12" style="text-align: center; color: #eeeeee;">
-            
-            <div id="speakers" class="scrollspy" style="margin-bottom: 25%;">
+        <div class="col s12 m12 l12" style="text-align: center; color: #eeeeee;">   
+            <div id="speakers" class="scrollspy" style="margin-bottom: 0;">
                 <h1  id="speaker-text"  class="team-speaker-text">Speakers and Judges</h1>
 
                 <div style="padding: 2%;font-size: 1.1rem;">
                     <div style="padding: 2%;font-size: 1.1rem;">
                         
-                        <div class="team-speaker-buttons centered" style="">
+                        <div class="team-speaker-buttons centered">
                             <a id="speaker-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><div class="button -regular center">Become a speaker</div></a>       
                         </div>
                         
                     </div>
-
-
-
                     <div class="row justify-content-center text-center" style="font-family: quicksand;">
                         <div class="col-md-4 col-lg-8 animated bounceInLeft" id="animate2">
                             <div class="row">
-                                <div class="col s12 m2 offset-m3" style="background-color: white; min-height: 325px; margin-right: 10px">
+                            
+                                <div class="col s5 m2 offset-s1 offset-m3 team-card-size smaller-card">
                                     <div class="card darken-1">
-                                        <div class="card-image z-depth-5" style="width: 94%; margin: auto; padding: 5px 0;">
-                                            <img src="static/design/images/AaronB.jpg" style="">      
-                                        </div>
-                                    </div>
-
-                                    <div class="card-content white-text" style="padding-bottom: 10px;">
-                                        <span class="card-title names" style="color: black;"><strong>Aaron Burdick</strong></span>
-                                        <p style="color: #070707; font-size: 0.9em;">Full-stack Developer, Zeals, Tokyo</p>
-                                    </div>
-                                </div> 
-                                
-                                <div class="col s12 m2" style="background-color: white; min-height: 325px; margin-right: 10px">
-                                    <div class="card darken-1">
-                                        <div class="card-image z-depth-5" style="width: 94%; margin: auto; padding: 5px 0;">
-                                            <img src="static/design/images/JuanPabloFlores.jpg" style="">      
+                                        <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                            <img src="static/design/images/speakers/aaron.jpg">      
                                         </div>
                                     </div>
                                     <div class="card-content white-text" style="padding-bottom: 10px;">
-                                        <span class="card-title names" style="color: black;"><strong>Juan Pablo Flores</strong></span>
-                                        <p style="color: #070707; font-size: 0.9em;">Program Manager, GitHub</p>
-                                    </div>
-                                </div> 
-                                
-                                <div class="col s12 m2" style="background-color: white; min-height: 325px;">
-                                    <div class="card darken-1">
-                                        <div class="card-image z-depth-5" style="width: 94%; margin: auto; padding: 5px 0;">
-                                            <img src="static/design/images/sagar-wakawaka-resized.jpg" style="">      
-                                        </div>
-                                    </div>
-                                    <div class="card-content white-text" style="padding-bottom: 10px;">
-                                        <span class="card-title names" style="color: black;"><strong>Sagar Vakkala</strong></span>
-                                        <p style="color: #070707; font-size: 0.9em;">Founder, Codezoned;</p>
+                                        <span class="card-title names" style="color: black;"><b>Aaron Burdick</b></span>
+                                        <p class="designation">Full Stack Developer, Zeals, Tokyo</p>
                                     </div>
                                 </div>
-
-                                 
-
+                                <div class="col s5 m2 team-card-size smaller-card">
+                                    <div class="card darken-1">
+                                        <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                            <img src="static/design/images/speakers/JuanPabloFlores.jpg">      
+                                        </div>
+                                    </div>
+                                    <div class="card-content white-text" style="padding-bottom: 10px;">
+                                        <span class="card-title names" style="color: black;"><b>Juan Pablo Flores</b></span>
+                                        <p class="designation">Program Manager, Github</p>
+                                    </div>
+                                </div>
+                                <div class="col s5 m2 offset-s1 team-card-size smaller-card">
+                                    <div class="card darken-1">
+                                        <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                            <img src="static/design/images/team/sagar3.jpg">      
+                                        </div>
+                                    </div>
+                                    <div class="card-content white-text" style="padding-bottom: 10px;">
+                                        <span class="card-title names" style="color: black;"><b>Sagar Vakkala</b></span>
+                                        <p class="designation">Founder, Codezoned;</p>
+                                    </div>
+                                </div>
                             </div>
-    
                         </div>
                     </div>
-                    <h4 style="font-size: 1.25rem;">We will be updating this section soon. <br> Till then, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><span style="color: #d52d30;">Become a speaker.</span></a></h4>
+                    <!-- <h4 style="font-size: 1.25rem;">We will be updating this section soon. <br> Till then, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><span style="color: #d52d30;">Become a speaker.</span></a></h4> -->
                 </div>
-                
-                <div class="col s12 m12 l12" style="margin-bottom: 45%;">
-                    <div id="the_team" class="scrollspy team-container">
-                        <h1  id="team-text"  class="team-text" style="padding: 2%;">The Team</h1>
-                        <div style="padding: 2%;font-size: 1.1rem;">
-                            <div class="centered join-team" style="width: 100%; max-width: 200px;">
-                                <a id="team-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSes_pbYmFdp1qYfH57E2YhMA16B8o5uYmjXt_Sng5Pug0Xzqg/viewform?usp=sf_link"><div class="button -regular center">Join the team</div></a>    
+            </div>
+        </div>
+
+            <div class="col s12 m12 l12" style="margin-bottom: 20%;">
+                <div id="the_team" class="scrollspy team-container">
+                    <h1  id="team-text"  class="team-text" style="padding: 2%;">The Team</h1>
+                    <div style="padding: 2%;font-size: 1.1rem;">
+                        <div class="centered join-team" style="width: 100%; max-width: 200px; margin-bottom: 7.5%">
+                            <a id="team-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSes_pbYmFdp1qYfH57E2YhMA16B8o5uYmjXt_Sng5Pug0Xzqg/viewform?usp=sf_link"><div class="button -regular center">Join the team</div></a>    
+                        </div>  
+                        <div class="row justify-content-center text-center" style="font-family: quicksand;">
+                            <div class="col-md-4 col-lg-8 animated bounceInLeft" id="animate2">
+                                <div class="row" style="text-align: center;">
+                                    
+                                    <div class="col s5 offset-s1 m2 offset-m1 team-card-size smaller-card">
+                                        <div class="card darken-1">
+                                            <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                                <img src="static/design/images/team/sagar3.jpg">      
+                                            </div>
+                                        </div>
+                                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                                            <span class="card-title names" style="color: black;"><b>Sagar Vakkala</b></span>
+                                            <p class="designation" style="color: #070707;">Lead organiser</p>
+                                        </div>
+                                    </div>
+                                    <div class="col s5 m2 team-card-size smaller-card">
+                                        <div class="card darken-1">
+                                            <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                                <img src="static/design/images/team/aniket3.jpg">      
+                                            </div>
+                                        </div>
+                                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                                            <span class="card-title names" style="color: black;"><b>Aniket Mishra</b></span>
+                                            <p class="designation" style="color: #070707;">Lead Technical Team</p>
+                                        </div>
+                                    </div>
+                                    <div class="col s5 offset-s1 m2 team-card-size bigger-card">
+                                        <div class="card darken-1">
+                                            <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                                <img src="static/design/images/team/paakhi3.jpeg">      
+                                            </div>
+                                        </div>
+    
+                                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                                            <span class="card-title names" style="color: black;"><b>Anindita Sarkar</b></span>
+                                            <p class="designation" style="color: #070707;">Lead Marketing and Design</p>
+                                        </div>
+                                    </div> 
+                                    
+                                    <div class="col s5 m2 team-card-size bigger-card">
+                                        <div class="card darken-1">
+                                            <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                                <img src="static/design/images/team/sadachiichan.jpeg">      
+                                            </div>
+                                        </div>
+                                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                                            <span class="card-title names" style="color: black;"><b>Sadakshi Kalyanraman</b></span>
+                                            <p class="designation" style="color: #070707;">Lead Sponsorships and Relations</p>
+                                        </div>
+                                    </div> 
+                                    
+                                    
+                                    <div class="col s5 offset-s1 m2 team-card-size smaller-card">
+                                        <div class="card darken-1">
+                                            <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                                <img src="static/design/images/team/arka3.jpg">      
+                                            </div>
+                                        </div>
+                                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                                            <span class="card-title names" style="color: black;"><b>Arka Dasgupta</b></span>
+                                            <p class="designation" style="color: #070707;">Marketing and Design</p>
+                                        </div>
+                                    </div>
+                                    <div class="col s5 m2 offset-m1 team-card-size smaller-card">
+                                        <div class="card darken-1">
+                                            <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                                <img src="static/design/images/team/swaaz3.jpg">      
+                                            </div>
+                                        </div>
+                                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                                            <span class="card-title names" style="color: black;"><b>Swasthik Shetty </b></span>
+                                            <p class="designation" style="color: #070707;">Technical Team</p>
+                                        </div>
+                                    </div>
+                                    <div class="col s5 offset-s1 m2 team-card-size smaller-card">
+                                        <div class="card darken-1">
+                                            <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                                <img src="static/design/images/team/senthil3.png">      
+                                            </div>
+                                        </div>
+                                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                                            <span class="card-title names" style="color: black;"><b>M. Senthil Kumar</b></span>
+                                            <p class="designation" style="color: #070707;">Technical Team</p>
+                                        </div>
+                                    </div>
+                                    <div class="col s5 m2 team-card-size smaller-card">
+                                        <div class="card darken-1">
+                                            <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                                <img src="static/design/images/team/nupur3.jpg">      
+                                            </div>
+                                        </div>
+                                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                                            <span class="card-title names" style="color: black;"><b>Nupur Khanter</b></span>
+                                            <p class="designation">Merch Dev & Design</p>
+                                        </div>
+                                    </div>
+                                    <div class="col s5 m2 offset-s1 team-card-size smaller-card">
+                                        <div class="card darken-1">
+                                            <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                                <img src="static/design/images/team/zafeer2.jpg">      
+                                            </div>
+                                        </div>
+                                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                                            <span class="card-title names" style="color: black;"><b>Mohammad Zafeer</b></span>
+                                            <p class="designation">Merch Dev & Design</p>
+                                        </div>
+                                    </div>
+
+                                </div>      
                             </div>
-        
-                            <h4 style="font-size: 1.25rem; margin-top: 5%;">We will be updating this section soon. <br> Till then, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><span style="color: #d52d30;">Join the Team.</span></a></h4>
                         </div>
                         
-                    </div>
+                    </div>               
                 </div>
-
             </div>
 
-        </div>
+
     </div>
  
     
@@ -437,7 +634,7 @@
 
     
     <div style=" background-color: #212121; height: 37.5px; width: 100%; position: fixed; bottom: 0; text-align: center; padding-top: 5px;">
-            <a target="_blank" href="http://codezoned.com"><div style="color: #eeeeee; font-family: profontwindows; font-size: 19px;">With <span class="pulsate">&#x2764;</span> by <span style="color: #d52d30; font-size: 22px;">code</span><span style="color: white;font-size: 22px;">zoned</span><span style="color: #767777; font-size: 22px;">;</span></div></a>
+            <a target="_blank" href="http://codezoned.com"><div style="color: #eeeeee; font-family: profontwindows; font-size: 19px;">With <span class="pulsate" style="color: d52d30;">&#x2764;</span> by <span style="color: #d52d30; font-size: 22px;">code</span><span style="color: white;font-size: 22px;">zoned</span><span style="color: #767777; font-size: 22px;">;</span></div></a>
     </div>
         <!-- d52d30
         white
@@ -455,39 +652,6 @@
         // ScrollSpy
         const ss = document.querySelectorAll('.scrollspy');
         M.ScrollSpy.init(ss, {});
-
-        // var targetOffset = $("#anchor-point").offset().top;
-        // var logodiv = getElementByClassName('logo-div')
-        
-        // var $w = $(window).scroll(function(){
-        //     if ( (screen.height<=1200) && ($w.scrollTop() > targetOffset-500) ) {  
-        //         $('.logo-div').hide(10);
-        //     } 
-        //     else if ( (screen.height<=1600) && ($w.scrollTop() > targetOffset-350) ) {  
-                
-        //         $('.logo-div').hide(10);
-        //     }
-        //     else if ( (screen.height>1600) && ($w.scrollTop() > targetOffset- 900) ) {  
-        //         $('.logo-div').hide(10);
-        //     }
-        //     else {
-        //         $('.logo-div').show(10);
-        //         $('.logo-div').css({"position":"fixed"});
-
-        //     }
-        // });
-
-        // $(document).ready(function() {
-
-            // if ((screen.width>=1024) && (screen.height>=768)) {
-            // alert('Screen size: 1024x768 or larger');
-            // $("link[rel=stylesheet]:not(:first)").attr({href : "style2.css"});
-            // }
-            // else {
-            // alert('Screen size: less than 1024x768, 800x600 maybe?');
-            // $("link[rel=stylesheet]:not(:first)").attr({href : "style1.css"});
-            // }
-        // });
 
         sponsor_id = document.getElementById('sponsor-text');
         speaker_id = document.getElementById('speaker-text');
@@ -535,7 +699,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             let devfolioOptions = {
                 buttonSelector: '#devfolio-apply-now',
-                key: 'myhackathonkey',
+                key: 'hac',
             }
 
             let script = document.createElement('script');
@@ -581,7 +745,7 @@
                 var height_element = $("#theFixed").height() + 150; //get high of elemeneto
                 var position_fixed_max = height_element_parent - height_element; // get the maximum position of the elemen
                 var position_fixed = scroll_top < 150 ? 150 - scroll_top : position_fixed_max > scroll_top ? 100 : position_fixed_max - scroll_top ;
-                $("#theFixed").css("top",position_fixed);
+                $("#theFixed").delay(800).css("top",position_fixed);
             });
         }
                 
