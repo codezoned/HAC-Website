@@ -376,9 +376,13 @@ ul li a {
 	margin-top: 27.5%;
 	margin-bottom: 0;
 }
-.title-sponsor {
+/* .title-sponsor {
 	margin-top: 5% !important;
 	padding-top: 2% !important;
+} */
+.title-sponsor {
+	margin-top: 2% !important;
+	padding-top: 1% !important;
 }
 .part-sponsor-text {
 	font-size: 1.8em;
@@ -387,8 +391,9 @@ ul li a {
 	text-align: center;
 	/* padding-left: 5%; */
 
-	margin-top: 5%;
-	margin-bottom: 5%;
+	/* margin-top: 5%; */
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 .details {
@@ -581,8 +586,8 @@ ul li a {
 	.title-sponsor {
 		padding-top: 17.5% !important;
 	}
-
-	.part-sponsor-text {
+	
+	/* .part-sponsor-text {
 		font-size: 1.5em;
 		font-family: quicksand;
 		text-align: center;
@@ -593,6 +598,16 @@ ul li a {
 		padding-top: 5%;
 		padding-bottom: 10%;
 		color: #070707;
+	} */
+	.part-sponsor-text {
+		font-size: 1.8em;
+		font-family: quicksand;
+		color: #070707;
+		text-align: center;
+		/* padding-left: 5%; */
+	
+		margin-top: 1%;
+		margin-bottom: 12%;
 	}
 	.sponsor-logos {
 		width: 90%;
@@ -603,11 +618,13 @@ ul li a {
 	}
 	.linode-logo {
 		width: 100% !important;
-		padding-bottom: 50px;
+		/* padding-bottom: 50px; */
+		padding-bottom: 20px;
 	}
 	.fold-logo {
 		width: 80%;
-		margin-bottom: 50px;
+		/* margin-bottom: 50px; */
+		margin-bottom: 10px;
 	}
 	.wolfram-logo {
 		width: 90%;
@@ -615,11 +632,13 @@ ul li a {
 	}
 	.matic-logo {
 		width: 100%;
-		margin-bottom: 50px;
+		/* margin-bottom: 50px; */
+		margin-bottom: 36px;;
 	}
 	.echo-logo {
 		width: 90%;
-		margin-bottom: 50px;
+		/* margin-bottom: 50px; */
+		margin-bottom: 6px;
 	}
 	.details {
 		margin-top: 10%;
