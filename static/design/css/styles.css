@@ -306,17 +306,26 @@ ul li a {
 	width: 100%;
 }
 .sponsor-logos {
-	width: 47.5%;
+	width: 32.5%;
+}
+.sponsor-logos-2{
+	width: 30%;
 }
 .fold-logo {
-	width: 45%;
+	width: 30%;
 }
 .matic-logo {
-	width: 70%;
+	width: 50%;
 }
 .echo-logo {
-	width: 80%;
+	padding-top: 3%;
+	width: 45%;
 	margin-bottom: 50px;
+}
+.linode-logo {
+	width: 30% !important;
+	padding-bottom: 50px;
+	/* padding-bottom: 20px; */
 }
 
 .sponsor-text {
