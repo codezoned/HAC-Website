@@ -29,6 +29,10 @@ ul li {
 ul li a {
 	height: 45px;
 }
+#discord-join{
+	height: 43.2px;
+	margin: 0px 0px 0px 40px;
+}
 
 .button-container {
 	display: flex;
@@ -497,7 +501,11 @@ ul li a {
 	#theFixed {
 		position: relative;
 	}
-
+	#discord-join{
+		height: 43.2px;
+		margin: auto;
+		margin-top: 10px;
+	}
 	.center-text-div {
 		display: block;
 		margin-left: auto;
