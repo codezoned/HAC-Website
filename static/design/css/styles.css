@@ -8,6 +8,13 @@
 	src: url('../fonts/ProFontWindows/ProFontWindows.ttf');
 }
 
+.join-buttons {
+	margin-left: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -29,7 +36,7 @@ ul li {
 ul li a {
 	height: 45px;
 }
-#discord-join{
+#discord-join {
 	height: 43.2px;
 	margin: 0px 0px 0px 40px;
 }
@@ -275,8 +282,8 @@ ul li a {
 
 .grid-container-small {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
-	grid-gap: 0px;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0;
 }
 
 .grid-container-2 {
@@ -312,7 +319,7 @@ ul li a {
 .sponsor-logos {
 	width: 32.5%;
 }
-.sponsor-logos-2{
+.sponsor-logos-2 {
 	width: 30%;
 }
 .fold-logo {
@@ -501,7 +508,7 @@ ul li a {
 	#theFixed {
 		position: relative;
 	}
-	#discord-join{
+	#discord-join {
 		height: 43.2px;
 		margin: auto;
 		margin-top: 10px;
@@ -518,7 +525,7 @@ ul li a {
 	.grid-container-small {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-gap: 0px;
+		grid-gap: 0;
 	}
 
 	.logo-img {
@@ -603,7 +610,7 @@ ul li a {
 	.title-sponsor {
 		padding-top: 17.5% !important;
 	}
-	
+
 	.part-sponsor-text {
 		font-size: 1.5em;
 		font-family: quicksand;
