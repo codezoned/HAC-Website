@@ -509,11 +509,11 @@ ul li a {
 	}
 	#discord-join {
 		height: 43.2px;
-		margin: auto;
+		margin-left: 1%;
 		margin-top: 10px;
 	}
 	#devfolio-apply-now{
-		margin:auto;
+		margin-left: 10%;
 	}
 	.center-text-div {
 		display: block;
