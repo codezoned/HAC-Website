@@ -237,6 +237,9 @@ ul li a {
 	position: fixed;
 }
 
+#discord-join{
+	margin-left: 2%;
+}
 .logo-img {
 	display: block;
 	margin-left: auto;
@@ -508,6 +511,9 @@ ul li a {
 		height: 43.2px;
 		margin: auto;
 		margin-top: 10px;
+	}
+	#devfolio-apply-now{
+		margin:auto;
 	}
 	.center-text-div {
 		display: block;
