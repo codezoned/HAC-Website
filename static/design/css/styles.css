@@ -362,7 +362,9 @@ ul li a {
 .team-speaker-text {
 	margin: 20% auto 10% auto;
 }
-
+#abhi-jain{
+	margin-left: 251px;
+}
 .team-speaker-buttons {
 	margin: 0 auto 5% auto;
 }
@@ -588,6 +590,9 @@ ul li a {
 
 	.team-speaker-text {
 		margin: 50% auto 10% auto;
+	}
+	#abhi-jain{
+		margin-left: 0px;
 	}
 
 	.team-speaker-buttons {
