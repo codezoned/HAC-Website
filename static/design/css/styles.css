@@ -386,7 +386,9 @@ ul li a {
 	margin-top: 17.5%;
 	margin-bottom: 0;
 }
-
+#cover-buttons{
+	justify-content: left;
+}
 .faq-text {
 	font-size: 2em;
 	font-family: quicksand;
@@ -415,6 +417,9 @@ ul li a {
 	/* margin-top: 5%; */
 	margin-top: 2%;
 	margin-bottom: 2%;
+}
+#devfolio-apply-now{
+	margin-left: -100px;
 }
 
 .details {
@@ -514,8 +519,11 @@ ul li a {
 		margin-left: 1%;
 		margin-top: 10px;
 	}
+	#cover-buttons{
+		justify-content: center;
+	}
 	#devfolio-apply-now{
-		margin-left: 10%;
+		margin-left: 25%;
 	}
 	.center-text-div {
 		display: block;
