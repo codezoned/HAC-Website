@@ -239,6 +239,12 @@
                         <a id="sponsor-btn"  target="_blank" href="https://forms.gle/PJHSidndo9mLsJUu8"><div class="button -regular2 center">Become a sponsor</div></a>    
                     </div>
                 </div>
+
+                <div style="font-size: 1.1rem; margin-top: 15px">
+                    <div class="centered" style=" color: #070707; max-width: 200px; margin: auto;">
+                        <a id="prospect-btn"  target="_blank" href="http://hac.codezoned.com/prospectus/hac_prospectus.pdf"><div class="button -regular2 center">Prospectus</div></a>    
+                    </div>
+                </div>
                 
                 <div class="row">
                     <div class="col s12">
@@ -590,8 +596,17 @@
                 // on mouseout, reset the background colour
                 $('#speaker-text').css('color', 'white');
             });
-        });$(function() {
+        });
+        $(function() {
             $('#sponsor-btn').hover(function() {
+                $('#sponsor-text').css('color', '#d52d30');
+            }, function() {
+                // on mouseout, reset the background colour
+                $('#sponsor-text').css('color', '#070707');
+            });
+        });
+        $(function() {
+            $('#prospect-btn').hover(function() {
                 $('#sponsor-text').css('color', '#d52d30');
             }, function() {
                 // on mouseout, reset the background colour
