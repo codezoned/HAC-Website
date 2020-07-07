@@ -363,7 +363,7 @@ ul li a {
 	margin: 20% auto 10% auto;
 }
 #abhi-jain{
-	margin-left: 251px;
+	margin-left: 8.333%;
 }
 .team-speaker-buttons {
 	margin: 0 auto 5% auto;
@@ -443,7 +443,13 @@ ul li a {
 .team-speaker-buttons {
 	max-width: 200px;
 }
-
+/* for speaker abhi jain */
+@media screen and (min-width:1500px)
+{
+	#abhi-jain{
+		margin-left: 8.333%;
+	}
+}
 @media screen and (min-height: 1200px) {
 	.logo-img {
 		display: block;
