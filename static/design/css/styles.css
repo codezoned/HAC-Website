@@ -36,10 +36,6 @@ ul li {
 ul li a {
 	height: 45px;
 }
-#discord-join {
-	height: 43.2px;
-	margin: 0px 0px 0px 40px;
-}
 
 .button-container {
 	display: flex;
@@ -241,6 +237,9 @@ ul li a {
 	position: fixed;
 }
 
+#discord-join{
+	margin-left: 2%;
+}
 .logo-img {
 	display: block;
 	margin-left: auto;
@@ -363,7 +362,9 @@ ul li a {
 .team-speaker-text {
 	margin: 20% auto 10% auto;
 }
-
+#abhi-jain{
+	margin-left: 251px;
+}
 .team-speaker-buttons {
 	margin: 0 auto 5% auto;
 }
@@ -385,7 +386,9 @@ ul li a {
 	margin-top: 17.5%;
 	margin-bottom: 0;
 }
-
+#cover-buttons{
+	justify-content: left;
+}
 .faq-text {
 	font-size: 2em;
 	font-family: quicksand;
@@ -415,6 +418,9 @@ ul li a {
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
+#devfolio-apply-now{
+	margin-left: -100px;
+}
 
 .details {
 	margin-top: 30%;
@@ -437,7 +443,18 @@ ul li a {
 .team-speaker-buttons {
 	max-width: 200px;
 }
-
+/* for speaker abhi jain */
+@media screen and (min-width:830px) and (max-width:1599px){
+	#abhi-jain{
+		margin-left: 0px;
+	}
+}
+@media screen and (min-width:1600px)
+{
+	#abhi-jain{
+		margin-left: 8.333%;
+	}
+}
 @media screen and (min-height: 1200px) {
 	.logo-img {
 		display: block;
@@ -510,8 +527,14 @@ ul li a {
 	}
 	#discord-join {
 		height: 43.2px;
-		margin: auto;
+		margin-left: 1%;
 		margin-top: 10px;
+	}
+	#cover-buttons{
+		justify-content: center;
+	}
+	#devfolio-apply-now{
+		margin-left: 25%;
 	}
 	.center-text-div {
 		display: block;
@@ -586,6 +609,9 @@ ul li a {
 
 	.team-speaker-text {
 		margin: 50% auto 10% auto;
+	}
+	#abhi-jain{
+		margin-left: 0px;
 	}
 
 	.team-speaker-buttons {
