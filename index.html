@@ -596,14 +596,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     
     <script>
+        //Today's Data
         var today = new Date();
         var date1 = new Date("07/09/2020"); 
-        var date2 = new Date("08/07/2020");
+        var date2 = new Date("08/05/2020");
         var Difference_In_Time = date2.getTime() - date1.getTime(); 
         var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
-        // let time_left = 1 * 24 * 60 * 60 * 1000  ;
-        // let time_left =   Difference_In_Time - today.getHours() - today.getMinutes() -today.getSeconds();
-        let time_left = today.getDate()
+        let time_left = (Difference_In_Days *24 *60*60 *1000 - (today.getHours() *60*60*1000) - (today.getMinutes() *60 * 1000) - (today.getSeconds() * 1000 ) - (today.getUTCMilliseconds()) );
+        
 
         // Count Down
             function getTimeRemaining(endtime) {
