@@ -431,17 +431,19 @@ ul li a {
 
 /* Count Down */
 #clockdiv{
+	justify-content: left;
 	font-family: sans-serif;
 	color: #eeeeee;
 	display: inline-block;
 	font-weight: 100;
-	text-align: center;
+	text-align: left;
 	font-size: 40px;
-  }
+}
   
   #clockdiv > div{
 	padding: 0px 10px 0px 10px;
 	display: inline-block;
+	text-align: center;
   }
   
   #clockdiv div > span{
@@ -568,6 +570,28 @@ ul li a {
 	#devfolio-apply-now{
 		margin-left: 25%;
 	}
+	/* Count Down */
+	#clockdiv{
+		text-align: center;
+		font-size:30px;
+		font-weight: 50px;
+	}
+	#clockdiv > div{
+		padding: 0px;
+		display: inline-block;
+		text-align: center;
+	  }
+	  
+	  #clockdiv div > span{
+		padding: 0px 5px 0px 5px;
+		display: inline-block;
+	  }
+	  
+	  #clockdiv .smalltext{
+		padding-top: 2px;
+		font-size: 16px;
+	  }
+	
 	.center-text-div {
 		display: block;
 		margin-left: auto;
