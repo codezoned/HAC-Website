@@ -297,8 +297,12 @@
                 <div style="padding: 2%;font-size: 1.1rem;">
                     <div style="padding: 2%;font-size: 1.1rem;">
                         
-                        <div class="team-speaker-buttons centered">
+                        <div class="team-speaker-buttons centered" style="margin-bottom: 12px;">
                             <a id="speaker-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeODBN9gBWdi8KReADp7kmc93z8nfGWrN5yjiIb15IICLvT9A/viewform?usp=sf_link"><div class="button -regular center">Become a speaker</div></a>       
+                        </div>
+
+                        <div class="team-speaker-buttons centered">
+                            <a id="speaker-btn" target="_blank" href="https://forms.gle/SuD45SmL8fb3U1AQA"><div class="button -regular center">Become a mentor</div></a>       
                         </div>
                         
                     </div>
@@ -586,6 +590,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     
     <script>
+        let date = new Date();
+        let time_left = 28 * 24 * 60 * 60 * 1000 - date ;
 
         // Count Down
             function getTimeRemaining(endtime) {
@@ -627,7 +633,7 @@
             var timeinterval = setInterval(updateClock, 1000);
             }
 
-            var deadline = new Date(Date.parse(new Date()) + 30 * 24 * 60 * 60 * 1000);
+            var deadline = new Date(Date.parse(new Date()) + time_left );
             initializeClock('clockdiv', deadline);
 
         // Sidenav
