@@ -248,6 +248,16 @@ ul li a {
 	margin-bottom: 26%;
 	width: 50%;
 }
+#event-date{
+	margin: 10px 20px 10px 20px;
+	font-family: quicksand;
+	font-size: 2rem;
+	font-weight: 900;
+}
+#edate-red {
+	color: #d52d30;
+	font-weight: 1000;
+}
 
 .covid-class {
 	font-size: 5rem;
@@ -326,6 +336,13 @@ ul li a {
 }
 .matic-logo {
 	width: 50%;
+}
+.balsamiq-logo{
+	width: 50%;
+}
+.gmc-logo{
+	width: 50%;
+	margin-bottom: 20px;;
 }
 .echo-logo {
 	padding-top: 3%;
@@ -421,6 +438,33 @@ ul li a {
 #devfolio-apply-now{
 	margin-left: -100px;
 }
+
+/* Count Down */
+#clockdiv{
+	justify-content: left;
+	font-family: sans-serif;
+	color: #eeeeee;
+	display: inline-block;
+	font-weight: 100;
+	text-align: left;
+	font-size: 40px;
+}
+  
+  #clockdiv > div{
+	padding: 0px 10px 0px 10px;
+	display: inline-block;
+	text-align: center;
+  }
+  
+  #clockdiv div > span{
+	padding: 0px 10px 0px 10px;
+	display: inline-block;
+  }
+  
+  #clockdiv .smalltext{
+	padding-top: 2px;
+	font-size: 16px;
+  }
 
 .details {
 	margin-top: 30%;
@@ -536,6 +580,29 @@ ul li a {
 	#devfolio-apply-now{
 		margin-left: 25%;
 	}
+	/* Count Down */
+	#clockdiv{
+		text-align: center;
+		font-size:30px;
+		font-weight: 50px;
+		margin-bottom: 10px;
+	}
+	#clockdiv > div{
+		padding: 0px;
+		display: inline-block;
+		text-align: center;
+	  }
+	  
+	  #clockdiv div > span{
+		padding: 0px 5px 0px 5px;
+		display: inline-block;
+	  }
+	  
+	  #clockdiv .smalltext{
+		padding-top: 0px;
+		font-size: 16px;
+	  }
+	
 	.center-text-div {
 		display: block;
 		margin-left: auto;
@@ -559,7 +626,17 @@ ul li a {
 	.covid-class {
 		font-size: 24px;
 	}
-
+	#event-date{
+		text-align: center;
+		margin: 10px 0px 0px 0px;
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
+	#edate-red {
+		color: #d52d30;
+		font-weight: 700;
+	}
+	
 	.centered {
 		text-align: center;
 	}
@@ -689,6 +766,14 @@ ul li a {
 		width: 90%;
 		margin-bottom: 50px;
 		/* margin-bottom: 6px; */
+	}
+	.balsamiq-logo{
+		width: 100%;
+		margin-bottom: 20px;;
+	}
+	.gmc-logo{
+		width: 100%;
+		margin-bottom: 50px;
 	}
 	.details {
 		margin-top: 10%;
