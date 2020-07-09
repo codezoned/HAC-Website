@@ -302,7 +302,7 @@
                         </div>
 
                         <div class="team-speaker-buttons centered">
-                            <a id="speaker-btn" target="_blank" href="https://forms.gle/SuD45SmL8fb3U1AQA"><div class="button -regular center">Become a mentor</div></a>       
+                            <a id="mentor-btn" target="_blank" href="https://forms.gle/SuD45SmL8fb3U1AQA"><div class="button -regular center">Become a mentor</div></a>       
                         </div>
                         
                     </div>
@@ -659,6 +659,14 @@
 
         $(function() {
             $('#speaker-btn').hover(function() {
+                $('#speaker-text').css('color', '#d52d30');
+            }, function() {
+                // on mouseout, reset the background colour
+                $('#speaker-text').css('color', 'white');
+            });
+        });
+        $(function() {
+            $('#mentor-btn').hover(function() {
                 $('#speaker-text').css('color', '#d52d30');
             }, function() {
                 // on mouseout, reset the background colour
