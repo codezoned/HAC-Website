@@ -255,11 +255,9 @@ ul li a {
 	font-weight: 900;
 }
 #edate-7 {
-	font-size: 2.5rem;
 	font-weight: 1000;
 }
 #edate-9 {
-	font-size: 2.5rem;
 	font-weight: 1000;
 }
 .covid-class {
@@ -588,6 +586,7 @@ ul li a {
 		text-align: center;
 		font-size:30px;
 		font-weight: 50px;
+		margin-bottom: 10px;
 	}
 	#clockdiv > div{
 		padding: 0px;
@@ -601,7 +600,7 @@ ul li a {
 	  }
 	  
 	  #clockdiv .smalltext{
-		padding-top: 2px;
+		padding-top: 0px;
 		font-size: 16px;
 	  }
 	
@@ -630,16 +629,14 @@ ul li a {
 	}
 	#event-date{
 		text-align: center;
-		margin: 0px;
-		font-size: 1.15rem;
+		margin: 10px 0px 0px 0px;
+		font-size: 1.6rem;
 		font-weight: 500;
 	}
 	#edate-7 {
-		font-size: 2.3rem;
 		font-weight: 700;
 	}
 	#edate-9 {
-		font-size: 2.3rem;
 		font-weight: 700;
 	}
 	.centered {
