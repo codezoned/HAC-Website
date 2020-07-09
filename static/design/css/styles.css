@@ -422,6 +422,31 @@ ul li a {
 	margin-left: -100px;
 }
 
+/* Count Down */
+#clockdiv{
+	font-family: sans-serif;
+	color: #eeeeee;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 40px;
+  }
+  
+  #clockdiv > div{
+	padding: 0px 10px 0px 10px;
+	display: inline-block;
+  }
+  
+  #clockdiv div > span{
+	padding: 0px 10px 0px 10px;
+	display: inline-block;
+  }
+  
+  #clockdiv .smalltext{
+	padding-top: 2px;
+	font-size: 16px;
+  }
+
 .details {
 	margin-top: 30%;
 	/* padding-bottom: 30%; */
