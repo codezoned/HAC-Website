@@ -327,6 +327,13 @@ ul li a {
 .matic-logo {
 	width: 50%;
 }
+.balsamiq-logo{
+	width: 50%;
+}
+.gmc-logo{
+	width: 50%;
+	margin-bottom: 20px;;
+}
 .echo-logo {
 	padding-top: 3%;
 	width: 45%;
@@ -714,6 +721,14 @@ ul li a {
 		width: 90%;
 		margin-bottom: 50px;
 		/* margin-bottom: 6px; */
+	}
+	.balsamiq-logo{
+		width: 100%;
+		margin-bottom: 20px;;
+	}
+	.gmc-logo{
+		width: 100%;
+		margin-bottom: 50px;
 	}
 	.details {
 		margin-top: 10%;

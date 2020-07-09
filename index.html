@@ -278,8 +278,14 @@
                         <a target="_blank" href="https://www.voiceflow.com/"><img class="matic-logo" src="static/design/images/voiceflow.png" alt="Voiceflow"></a>
                     </div> 
                     <div class="col s10 offset-s1 m6">
-                        <a target="_blank" href="https://balsamiq.com/"><img class="matic-logo" src="static/design/images/balsamiq-logo-noborder-screen.png" alt="Balsamiq"></a>
+                        <a target="_blank" href="https://balsamiq.com/"><img class="balsamiq-logo" src="static/design/images/balsamiq-logo-noborder-screen.png" alt="Balsamiq"></a>
                     </div><br>
+
+                    <div class="col s10 offset-s1  m12"><br>
+                        <h2 class="part-sponsor-text">Partners:-</h2>
+                        <a target="_blank" href="https://givemycertificate.com/"><img class="gmc-logo" src="static/design/images/gmc_logo.png" alt="Devfolio"></a>
+                    </div>
+
                     <!-- <div>
                         <img class="sponsor-logos" src="..\..\static\design\images\github-logo.png" alt="">
                     </div>
@@ -590,8 +596,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     
     <script>
-        let date = new Date();
-        let time_left = 28 * 24 * 60 * 60 * 1000 - date ;
+        var today = new Date();
+        var date1 = new Date("07/09/2020"); 
+        var date2 = new Date("08/07/2020");
+        var Difference_In_Time = date2.getTime() - date1.getTime(); 
+        var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
+        // let time_left = 1 * 24 * 60 * 60 * 1000  ;
+        // let time_left =   Difference_In_Time - today.getHours() - today.getMinutes() -today.getSeconds();
+        let time_left = today.getDate()
 
         // Count Down
             function getTimeRemaining(endtime) {
