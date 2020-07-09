@@ -248,7 +248,20 @@ ul li a {
 	margin-bottom: 26%;
 	width: 50%;
 }
-
+#event-date{
+	margin: 10px 20px 10px 20px;
+	font-family: quicksand;
+	font-size: 2rem;
+	font-weight: 900;
+}
+#edate-7 {
+	font-size: 2.5rem;
+	font-weight: 1000;
+}
+#edate-9 {
+	font-size: 2.5rem;
+	font-weight: 1000;
+}
 .covid-class {
 	font-size: 5rem;
 	font-family: quicksand;
@@ -615,7 +628,20 @@ ul li a {
 	.covid-class {
 		font-size: 24px;
 	}
-
+	#event-date{
+		text-align: center;
+		margin: 0px;
+		font-size: 1.15rem;
+		font-weight: 500;
+	}
+	#edate-7 {
+		font-size: 2.3rem;
+		font-weight: 700;
+	}
+	#edate-9 {
+		font-size: 2.3rem;
+		font-weight: 700;
+	}
 	.centered {
 		text-align: center;
 	}
