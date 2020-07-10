@@ -332,11 +332,12 @@ ul li a {
 	width: 30%;
 }
 .fold-logo {
-	width: 30%;
+	width: 44%;
 }
 .matic-logo {
-	width: 50%;
+	width: 65%;
 }
+.wolfram-logo
 .balsamiq-logo{
 	width: 50%;
 }
@@ -351,7 +352,6 @@ ul li a {
 }
 .linode-logo {
 	width: 30% !important;
-	padding-bottom: 50px;
 	/* padding-bottom: 20px; */
 }
 
