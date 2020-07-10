@@ -337,7 +337,9 @@ ul li a {
 .matic-logo {
 	width: 65%;
 }
-.wolfram-logo
+.wolfram-logo{
+	width: 52%;
+}
 .balsamiq-logo{
 	width: 50%;
 }
@@ -345,13 +347,15 @@ ul li a {
 	width: 50%;
 	margin-bottom: 20px;;
 }
+.voice-logo{
+	width: 50%;
+}
 .echo-logo {
-	padding-top: 3%;
-	width: 45%;
-	margin-bottom: 50px;
+	padding-top: 4%;
+	width: 57%;
 }
 .linode-logo {
-	width: 30% !important;
+	width: 50% !important;
 	/* padding-bottom: 20px; */
 }
 
