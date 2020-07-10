@@ -37,6 +37,40 @@ ul li a {
 	height: 45px;
 }
 
+/* Transition effects */
+.button {
+	-webkit-transition: all 1s ease !important;
+}
+#codeit,
+#sponsor-text,
+#speaker-text,
+#team-text {
+	-webkit-transition: all 1s ease !important;
+}
+.prizes {
+	-webkit-transition: all 1s ease !important;
+}
+.prize {
+	-webkit-transition: all 1s ease !important;
+}
+
+.prize1:hover,
+.prize2:hover,
+.prize3:hover {
+	color: #d52d30;
+}
+
+.prize1,
+.prize2,
+.prize3 {
+	-webkit-transition: all 1s ease !important;
+}
+.amount1,
+.amount2,
+.amount3 {
+	-webkit-transition: all 1s ease !important;
+}
+
 .button-container {
 	display: flex;
 	margin: 5px auto;
@@ -237,7 +271,7 @@ ul li a {
 	position: fixed;
 }
 
-#discord-join{
+#discord-join {
 	margin-left: 2%;
 }
 .logo-img {
@@ -248,7 +282,7 @@ ul li a {
 	margin-bottom: 26%;
 	width: 50%;
 }
-#event-date{
+#event-date {
 	margin: 10px 20px 10px 20px;
 	font-family: quicksand;
 	font-size: 2rem;
@@ -337,12 +371,16 @@ ul li a {
 .matic-logo {
 	width: 50%;
 }
-.balsamiq-logo{
+.balsamiq-logo {
 	width: 50%;
 }
-.gmc-logo{
+.gmc-logo {
 	width: 50%;
-	margin-bottom: 20px;;
+	margin-bottom: 20px;
+}
+.bugsee-logo {
+	width: 25%;
+	margin-bottom: 20px;
 }
 .echo-logo {
 	padding-top: 3%;
@@ -379,7 +417,7 @@ ul li a {
 .team-speaker-text {
 	margin: 20% auto 10% auto;
 }
-#abhi-jain{
+#abhi-jain {
 	margin-left: 251px;
 }
 .team-speaker-buttons {
@@ -403,7 +441,7 @@ ul li a {
 	margin-top: 17.5%;
 	margin-bottom: 0;
 }
-#cover-buttons{
+#cover-buttons {
 	justify-content: left;
 }
 .faq-text {
@@ -435,12 +473,12 @@ ul li a {
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
-#devfolio-apply-now{
+#devfolio-apply-now {
 	margin-left: -100px;
 }
 
 /* Count Down */
-#clockdiv{
+#clockdiv {
 	justify-content: left;
 	font-family: sans-serif;
 	color: #eeeeee;
@@ -449,22 +487,22 @@ ul li a {
 	text-align: left;
 	font-size: 40px;
 }
-  
-  #clockdiv > div{
+
+#clockdiv > div {
 	padding: 0px 10px 0px 10px;
 	display: inline-block;
 	text-align: center;
-  }
-  
-  #clockdiv div > span{
+}
+
+#clockdiv div > span {
 	padding: 0px 10px 0px 10px;
 	display: inline-block;
-  }
-  
-  #clockdiv .smalltext{
+}
+
+#clockdiv .smalltext {
 	padding-top: 2px;
 	font-size: 16px;
-  }
+}
 
 .details {
 	margin-top: 30%;
@@ -488,14 +526,13 @@ ul li a {
 	max-width: 200px;
 }
 /* for speaker abhi jain */
-@media screen and (min-width:830px) and (max-width:1599px){
-	#abhi-jain{
+@media screen and (min-width: 830px) and (max-width: 1599px) {
+	#abhi-jain {
 		margin-left: 0px;
 	}
 }
-@media screen and (min-width:1600px)
-{
-	#abhi-jain{
+@media screen and (min-width: 1600px) {
+	#abhi-jain {
 		margin-left: 8.333%;
 	}
 }
@@ -574,35 +611,35 @@ ul li a {
 		margin-left: 1%;
 		margin-top: 10px;
 	}
-	#cover-buttons{
+	#cover-buttons {
 		justify-content: center;
 	}
-	#devfolio-apply-now{
+	#devfolio-apply-now {
 		margin-left: 25%;
 	}
 	/* Count Down */
-	#clockdiv{
+	#clockdiv {
 		text-align: center;
-		font-size:30px;
+		font-size: 30px;
 		font-weight: 50px;
 		margin-bottom: 10px;
 	}
-	#clockdiv > div{
+	#clockdiv > div {
 		padding: 0px;
 		display: inline-block;
 		text-align: center;
-	  }
-	  
-	  #clockdiv div > span{
+	}
+
+	#clockdiv div > span {
 		padding: 0px 5px 0px 5px;
 		display: inline-block;
-	  }
-	  
-	  #clockdiv .smalltext{
+	}
+
+	#clockdiv .smalltext {
 		padding-top: 0px;
 		font-size: 16px;
-	  }
-	
+	}
+
 	.center-text-div {
 		display: block;
 		margin-left: auto;
@@ -626,7 +663,7 @@ ul li a {
 	.covid-class {
 		font-size: 24px;
 	}
-	#event-date{
+	#event-date {
 		text-align: center;
 		margin: 10px 0px 0px 0px;
 		font-size: 1.6rem;
@@ -636,7 +673,7 @@ ul li a {
 		color: #d52d30;
 		font-weight: 700;
 	}
-	
+
 	.centered {
 		text-align: center;
 	}
@@ -687,7 +724,7 @@ ul li a {
 	.team-speaker-text {
 		margin: 50% auto 10% auto;
 	}
-	#abhi-jain{
+	#abhi-jain {
 		margin-left: 0px;
 	}
 
@@ -767,12 +804,16 @@ ul li a {
 		margin-bottom: 50px;
 		/* margin-bottom: 6px; */
 	}
-	.balsamiq-logo{
+	.balsamiq-logo {
 		width: 100%;
-		margin-bottom: 20px;;
+		margin-bottom: 20px;
 	}
-	.gmc-logo{
+	.gmc-logo {
 		width: 100%;
+		margin-bottom: 50px;
+	}
+	.bugsee-logo {
+		width: 60%;
 		margin-bottom: 50px;
 	}
 	.details {
