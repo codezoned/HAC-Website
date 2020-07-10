@@ -27,13 +27,8 @@
     <title>HAC 2020</title>
     
     <style>
-        .button{
-            -webkit-transition: all 1s ease !important;
-        }
-        #codeit, #sponsor-text, #speaker-text, #team-text{
-            -webkit-transition: all 1s ease !important;
-            
-        }
+
+        
     </style>
 
 </head>
@@ -193,26 +188,65 @@
                         
                             <b>Other</b> <br> The above themes are just suggestions. Feel empowered to get creative!
                           <br>
-                    </ul>
+
                 </div>
             </div>
 
-            <div class="section about-text" style="width: 100%;">
-                <h1  id="track" class="scrollspy about-text" style="padding: 10% 2%;">Prizes</h1>
-                <div style="padding: 2%;font-size: 1.2rem;">
+            <div class="section about-text" style="width: 100%; font-family: quicksand;">
+                <h1  id="prize" class="scrollspy about-text" style="padding: 10% 2%;">Prizes</h1>
+                <div class="row" style="font-size: 0.75em;">
+  
+                    <div class="col s12 prizes">
+                        <span class="prize1"><b>1st Prize:</b></span><br> Amazon Gift Voucher worth <span class="amount1" style="font-weight: 800;"> 25k!</span><br> <br>
+                    </div>
 
-                            <b>1st Prize:</b> Amazon Gift Voucher worth <span style="color: red;"> 25k!</span><br> <br>
+                    <div class="col s12 prizes">
+                        <span class="prize2"><b>2nd Prize:</b></span><br> Amazon Gift Voucher worth <span class="amount2" style="font-weight: 800;"> 15k!</span><br> <br>
                         
-                            <b>2nd Prize:</b> Amazon Gift Voucher worth <span style="color: red;"> 15k!</span><br> <br>
+                    </div>
+
+                    <div class="col s12 prizes">
+                        <span class="prize3"><b>3rd Prize:</b></span><br> Amazon Gift Voucher worth <span class="amount3" style="font-weight: 800;"> 10k!</span><br> <br>
                         
-                            <b>3rd Prize:</b> Amazon Gift Voucher worth <span style="color: red;"> 10k!</span><br> <br>
-                            <br>
-                            
-                            <span style="font-size: 1.8em"><b>Challenges!</b></span><br>
-                            <br>
-                            We will keep you posted on the challenges. We are coming up with some anazing stuff, so hold on tight!
-                          <br>
-                    </ul>
+                    </div>
+
+                </div>
+                <div style="padding: 2%;font-size: 1.2rem;">
+                    <h4 style="margin-bottom: 20px;"><b>Challenges!</b> </h4><br>
+                    <div class="row">
+                        <div class="col s12" style="border: solid 2px white; padding: 5px; margin-bottom: 10px;">
+                            <h5><b> Matic</b> </h5>
+
+                            1.    Cash prize for the best hack built on top of Ethereum <b>(Rs.10000)</b> during the hackathon. <br>
+                            2.    For teams that integrate Matic in their hacks as well the prize money 
+                            will be higher <b>(Rs.15000)</b> along with eligibility for 
+                            internship/full-time role interviews and a chance to land seed funding 
+                            of up to 5000 USD! <br> <br>
+                        </div>
+                        <div class="col s12" style="border: solid 2px white; padding: 5px; margin-bottom: 10px;">
+                            <h5><b> Wolfram </b></h5>
+
+                            The <b>Wolfram Award</b> for everyone on the top <b>fifteen teams</b>. <br> <br>
+                            1. This award is for a year of 
+                            Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro.<br> <br>
+                        </div>
+                        <div class="col s12" style="border: solid 2px white; padding: 5px; margin-bottom: 10px;">
+                            <h5><b> Fold</b></h5>
+                            1. Premium access accounts for Hackathon winners <br>
+                            2. Internship and Full-time opportunities eligibility for hackathon winners (higher priority application review)
+                            <br> <br>
+                        </div>
+
+                        <div class="col s12" style="border: solid 2px white; padding: 5px; margin-bottom: 10px;">
+                            <h5><b>echoAR</b></h5>
+
+                            <b>Build the best AR/VR application using the echoAR platform!</b> <br> <br>
+                            1. $50 Amazon gift card <br>
+                            2. One-month free Business Tier access <br>
+                            3. A feature in our newsletter (sent to investors and AR/VR ecosystem)
+                            <br> <br>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -227,7 +261,8 @@
                     No, not at all. Hackathons are the best place to bring together diverse skill sets to solve a common goal. People from all backgrounds including designing, marketing, analysis and entrepreneurship join forces together to visualize a product. We highly encourage you to meet and collaborate with other participants to pitch your idea
                     
                     <br><br><b>3.  	How can I register for HAC?</b><br>
-                    Registrations for HAC are open! You can register if you can find the link <b>NOT</b> hidden somewhere in the website.<br>
+                    Registrations for HAC are open! You can register if you can find the link 
+                    <a target="_blank" href="https://hac.devfolio.co/" style="color: #d52d30;"><b>NOT</b></a> hidden somewhere in the website.<br>
                     
                     <br><b>4. 	Where is HAC happening and how long is it for?</b> <br>
                     Keeping your safety and comfort in mind, HAC will be conducted virtually to freely facilitate innovation. This hackathon will be for 50 hours.
@@ -626,11 +661,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     
     <script>
+
+        var deadline = new Date("aug 7, 2020, 18:00:00");
         //Today's Data
         var today = new Date();
-        var date1 = new Date("07/09/2020"); 
-        var date2 = new Date("08/07/2020");
-        var Difference_In_Time = date2.getTime() - date1.getTime(); 
+        var Difference_In_Time = deadline.getTime() - today.getTime(); 
         var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
         let time_left = (Difference_In_Days *24 *60*60 *1000 - (today.getHours() *60*60*1000) - (today.getMinutes() *60 * 1000) - (today.getSeconds() * 1000 ) - (today.getUTCMilliseconds()) );
         
@@ -698,7 +733,6 @@
                 $('#codeit').css('color', 'white');
             });
         });
-    
         $(function() {
             $('#speaker-btn').hover(function() {
                 $('#speaker-text').css('color', '#d52d30');
@@ -740,6 +774,29 @@
             });
         });
 
+
+        $(function() {
+            $('.prize1').hover(function() {
+                $('.amount1').css('color', '#d52d30');
+            }, function() {
+                // on mouseout, reset the background colour
+                $('.amount1').css('color', 'white');
+            });
+        });$(function() {
+            $('.prize2').hover(function() {
+                $('.amount2').css('color', '#d52d30');
+            }, function() {
+                // on mouseout, reset the background colour
+                $('.amount2').css('color', 'white');
+            });
+        });$(function() {
+            $('.prize3').hover(function() {
+                $('.amount3').css('color', '#d52d30');
+            }, function() {
+                // on mouseout, reset the background colour
+                $('.amount3').css('color', 'white');
+            });
+        });
 
 
         $('#conduct1').click( function() { alert("The form is comin' up. Stay seated!"); });
