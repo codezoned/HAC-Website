@@ -360,36 +360,40 @@ ul li a {
 	width: 100%;
 }
 .sponsor-logos {
-	width: 32.5%;
+	width: 27.5%;
 }
 .sponsor-logos-2 {
-	width: 30%;
+	width: 25%;
 }
 .fold-logo {
-	width: 30%;
+	width: 44%;
 }
 .matic-logo {
-	width: 50%;
+	width: 65%;
+}
+.wolfram-logo{
+	width: 52%;
 }
 .balsamiq-logo {
 	width: 50%;
 }
 .gmc-logo {
-	width: 50%;
-	margin-bottom: 20px;
+	padding-top: 4%;
+	width: 53%;
 }
 .bugsee-logo {
 	width: 25%;
 	margin-bottom: 20px;
 }
+.voice-logo{
+	width: 50%;
+}
 .echo-logo {
-	padding-top: 3%;
-	width: 45%;
-	margin-bottom: 50px;
+	padding-top: 4%;
+	width: 57%;
 }
 .linode-logo {
-	width: 30% !important;
-	padding-bottom: 50px;
+	width: 50% !important;
 	/* padding-bottom: 20px; */
 }
 
@@ -786,21 +790,21 @@ ul li a {
 		/* padding-bottom: 20px; */
 	}
 	.fold-logo {
-		width: 80%;
+		width: 65%;
 		margin-bottom: 50px;
 		/* margin-bottom: 10px; */
 	}
 	.wolfram-logo {
-		width: 90%;
-		margin-bottom: 50px;
+		width: 76%;
+		margin-bottom: 40px;
 	}
 	.matic-logo {
-		width: 100%;
+		width: 80%;
 		margin-bottom: 50px;
 		/* margin-bottom: 36px; */
 	}
 	.echo-logo {
-		width: 90%;
+		width: 78%;
 		margin-bottom: 50px;
 		/* margin-bottom: 6px; */
 	}
@@ -808,12 +812,16 @@ ul li a {
 		width: 100%;
 		margin-bottom: 20px;
 	}
+	.voice-logo{
+		width: 90%;
+		margin-bottom: 40px;;
+	}
 	.gmc-logo {
 		width: 100%;
 		margin-bottom: 50px;
 	}
 	.bugsee-logo {
-		width: 60%;
+		width: 50%;
 		margin-bottom: 50px;
 	}
 	.details {
