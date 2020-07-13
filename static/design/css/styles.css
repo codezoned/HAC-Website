@@ -383,6 +383,9 @@ ul li a {
 }
 .bugsee-logo {
 	width: 25%;
+}
+.jet-logo {
+	width: 25%;
 	margin-bottom: 20px;
 }
 .voice-logo{
@@ -824,6 +827,10 @@ ul li a {
 		margin-bottom: 50px;
 	}
 	.bugsee-logo {
+		width: 50%;
+		margin-bottom: 50px;
+	}
+	.jet-logo {
 		width: 50%;
 		margin-bottom: 50px;
 	}
