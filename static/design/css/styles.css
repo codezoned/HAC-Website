@@ -371,7 +371,11 @@ ul li a {
 .matic-logo {
 	width: 65%;
 }
-.wolfram-logo{
+
+.de-logo {
+	width: 65%;
+}
+.wolfram-logo {
 	width: 52%;
 }
 .balsamiq-logo {
@@ -379,16 +383,17 @@ ul li a {
 }
 .gmc-logo {
 	padding-top: 4%;
-	width: 53%;
+	width: 55%;
 }
 .bugsee-logo {
 	width: 25%;
-}
-.jet-logo {
-	width: 25%;
 	margin-bottom: 20px;
 }
-.voice-logo{
+.jet-logo {
+	width: 40%;
+	margin-bottom: 20px;
+}
+.voice-logo {
 	width: 50%;
 }
 .echo-logo {
@@ -542,7 +547,7 @@ ul li a {
 	#abhi-jain {
 		margin-left: 8.333%;
 	}
-	#nirmal{
+	#nirmal {
 		margin-left: 0px;
 	}
 }
@@ -809,6 +814,10 @@ ul li a {
 		margin-bottom: 50px;
 		/* margin-bottom: 36px; */
 	}
+	.de-logo {
+		width: 80%;
+		margin-bottom: 50px;
+	}
 	.echo-logo {
 		width: 78%;
 		margin-bottom: 50px;
@@ -818,9 +827,9 @@ ul li a {
 		width: 100%;
 		margin-bottom: 20px;
 	}
-	.voice-logo{
+	.voice-logo {
 		width: 90%;
-		margin-bottom: 40px;;
+		margin-bottom: 40px;
 	}
 	.gmc-logo {
 		width: 100%;
