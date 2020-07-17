@@ -373,7 +373,11 @@ ul li a {
 }
 
 .de-logo {
-	width: 65%;
+	margin-top: 20px;
+	width: 50%;
+}
+.sashi-logo {
+	width: 50%;
 }
 .wolfram-logo {
 	width: 52%;
@@ -815,6 +819,10 @@ ul li a {
 		/* margin-bottom: 36px; */
 	}
 	.de-logo {
+		width: 80%;
+		margin-bottom: 50px;
+	}
+	.sashi-logo {
 		width: 80%;
 		margin-bottom: 50px;
 	}
