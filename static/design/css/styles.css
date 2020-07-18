@@ -446,7 +446,9 @@ ul li a {
 .join-team {
 	margin: 15px auto 0 auto;
 }
-
+.join-vol {
+	margin: 15px auto 5% auto;
+}
 .team-text {
 	font-size: 2em;
 	font-family: quicksand;
@@ -763,9 +765,12 @@ ul li a {
 		margin-bottom: 10%;
 	}
 	.join-team {
-		margin: 10% auto 20% auto;
+		margin: 10% auto 0 auto;
 	}
 
+	.join-vol {
+		margin: 3% auto 20% auto;
+	}
 	.title-sponsor {
 		padding-top: 17.5% !important;
 	}
