@@ -362,6 +362,9 @@ ul li a {
 .sponsor-logos {
 	width: 27.5%;
 }
+.mlh-logo {
+	width: 20%;
+}
 .sponsor-logos-2 {
 	width: 25%;
 }
@@ -797,10 +800,15 @@ ul li a {
 		margin-top: 1%;
 		margin-bottom: 12%;
 	} */
+
+
+	
 	.sponsor-logos {
 		width: 90%;
 	}
-
+	.mlh-logo {
+		width: 70%;
+	}
 	.sponsor-logos-2 {
 		width: 87.5%;
 	}
