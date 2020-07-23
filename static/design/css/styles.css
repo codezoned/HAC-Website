@@ -400,6 +400,10 @@ ul li a {
 	width: 40%;
 	margin-bottom: 20px;
 }
+.spi-logo {
+	width: 50%;
+	margin-bottom: 20px;
+}
 .voice-logo {
 	width: 50%;
 }
@@ -862,6 +866,10 @@ ul li a {
 	}
 	.jet-logo {
 		width: 50%;
+		margin-bottom: 50px;
+	}
+	.spi-logo {
+		width: 70%;
 		margin-bottom: 50px;
 	}
 	.details {
