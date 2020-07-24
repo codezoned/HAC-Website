@@ -389,19 +389,23 @@ ul li a {
 	width: 50%;
 }
 .gmc-logo {
-	padding-top: 4%;
-	width: 55%;
+	padding-top: 8%;
+	width: 100%;
 }
 .bugsee-logo {
-	width: 25%;
+	width: 45%;
 	margin-bottom: 20px;
 }
 .jet-logo {
-	width: 40%;
+	width: 58%;
 	margin-bottom: 20px;
 }
 .spi-logo {
-	width: 50%;
+	width: 73%;
+	margin-bottom: 20px;
+}
+.sticker-logo {
+	width: 113%;
 	margin-bottom: 20px;
 }
 .voice-logo {
@@ -871,6 +875,11 @@ ul li a {
 	.spi-logo {
 		width: 70%;
 		margin-bottom: 50px;
+	}
+	.sticker-logo {
+		width: 100%;
+		margin-bottom: 50px;
+
 	}
 	.details {
 		margin-top: 10%;
