@@ -592,7 +592,7 @@
         <!-- mentors -->
         <div class="col s12 m12 l12" style="text-align: center; color: #eeeeee;">   
             <div id="speakers" class="scrollspy" style="margin-bottom: 0;">
-                <h1  id="speaker-text"  class="team-speaker-text">Mentors</h1>
+                <h1  id="mentor-text"  class="team-speaker-text">Mentors</h1>
 
                 <div style="padding: 2%;font-size: 1.1rem;">
                     <div style="padding: 2%;font-size: 1.1rem;">
@@ -612,7 +612,21 @@
                             <div class="row">
 
                                 <a target="_blank" href="https://www.linkedin.com/in/rafaellagunas/">
-                                    <div class="col s5 m2 l2 offset-s1 offset-l2 offset-m2 team-card-size bigger-card">
+                                    <div class="col s5 m2 l2 offset-s1 offset-l1 offset-m1 team-card-size bigger-card">
+                                        <div class="card darken-1">
+                                            <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
+                                                <img src="static/design/images/speakers/rahul.jpeg">      
+                                            </div>
+                                        </div>
+                                        <div class="card-content white-text" style="padding-bottom: 10px;">
+                                            <span class="card-title names" style="color: black;"><b>Rahul Krishnan</b></span>
+                                            <p class="designation">SDE, Amazon</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a target="_blank" href="https://www.linkedin.com/in/rafaellagunas/">
+                                    <div class="col s5 m2 l2 offset-s1 team-card-size bigger-card">
                                         <div class="card darken-1">
                                             <div class="card-image" style="width: 94%; margin: auto; padding: 5px 0;">
                                                 <img src="static/design/images/speakers/rafael_Lagunas.jpg">      
@@ -624,6 +638,7 @@
                                         </div>
                                     </div>
                                 </a>
+
                                 <a target="_blank" href="https://www.linkedin.com/in/anustupmukherjee/">
                                     <div class="col s5 m2 l2 team-card-size bigger-card">
                                         <div class="card darken-1">
@@ -1001,10 +1016,10 @@
         });
         $(function() {
             $('#mentor-btn').hover(function() {
-                $('#speaker-text').css('color', '#d52d30');
+                $('#mentor-text').css('color', '#d52d30');
             }, function() {
                 // on mouseout, reset the background colour
-                $('#speaker-text').css('color', 'white');
+                $('#mentor-text').css('color', 'white');
             });
         });
         $(function() {
