@@ -389,7 +389,7 @@ ul li a {
 	width: 50%;
 }
 .gmc-logo {
-	padding-top: 6%;
+	padding-top: 10%;
 	width: 80%;
 }
 .bugsee-logo {
@@ -404,6 +404,16 @@ ul li a {
 .spi-logo {
 	margin-top: 2%;
 	width: 50%;
+	margin-bottom: 20px;
+}
+
+.coffee-logo {
+	width: 37%;
+	margin-bottom: 20px;
+}
+.zubi-logo {
+	margin-top: 6%;
+	width: 20%;
 	margin-bottom: 20px;
 }
 .sticker-logo {
@@ -877,6 +887,16 @@ ul li a {
 	.spi-logo {
 		width: 70%;
 		margin-bottom: 50px;
+	}
+	.coffee-logo {
+		width: 70%;
+		margin-bottom: 50px;
+
+	}
+	.zubi-logo {
+		width: 30%;
+		margin-bottom: 50px;
+
 	}
 	.sticker-logo {
 		width: 100%;
