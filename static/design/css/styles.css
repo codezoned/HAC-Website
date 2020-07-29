@@ -421,8 +421,8 @@ ul li a {
 	margin-bottom: 20px;
 }
 .alert-logo {
-	height: 50%;
-	width: 50%;
+	height: 30%;
+	width: 30%;
 	margin-left: 50%;
 	margin-bottom: 20px;
 }
@@ -912,6 +912,7 @@ ul li a {
 
 	.alert-logo {
 		width: 50%;
+		padding-left: 0;
 		margin-bottom: 10px;
 
 	}
