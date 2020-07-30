@@ -389,7 +389,7 @@ ul li a {
 	width: 50%;
 }
 .gmc-logo {
-	padding-top: 6%;
+	padding-top: 10%;
 	width: 80%;
 }
 .bugsee-logo {
@@ -406,8 +406,24 @@ ul li a {
 	width: 50%;
 	margin-bottom: 20px;
 }
+
+.coffee-logo {
+	width: 37%;
+	margin-bottom: 20px;
+}
+.zubi-logo {
+	margin-top: 6%;
+	width: 20%;
+	margin-bottom: 20px;
+}
 .sticker-logo {
 	width: 140%;
+	margin-bottom: 20px;
+}
+.alert-logo {
+	height: 30%;
+	width: 30%;
+	margin-left: 50%;
 	margin-bottom: 20px;
 }
 .voice-logo {
@@ -878,9 +894,26 @@ ul li a {
 		width: 70%;
 		margin-bottom: 50px;
 	}
+	.coffee-logo {
+		width: 70%;
+		margin-bottom: 50px;
+
+	}
+	.zubi-logo {
+		width: 30%;
+		margin-bottom: 50px;
+
+	}
 	.sticker-logo {
 		width: 100%;
 		margin-bottom: 50px;
+
+	}
+
+	.alert-logo {
+		width: 50%;
+		padding-left: 0;
+		margin-bottom: 10px;
 
 	}
 	.details {
