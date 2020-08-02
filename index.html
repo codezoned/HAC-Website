@@ -1075,12 +1075,13 @@
     
     <script>
 
-        var deadline = new Date("aug 7, 2020, 18:00:00");
+        var deadline = new Date("aug 7, 2020, 14:00:00");
         //Today's Data
         var today = new Date();
         var Difference_In_Time = deadline.getTime() - today.getTime(); 
-        var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
-        let time_left = (Difference_In_Days *24 *60*60 *1000 - (today.getHours() *60*60*1000) - (today.getMinutes() *60 * 1000) - (today.getSeconds() * 1000 ) - (today.getUTCMilliseconds()) );
+        // var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
+        let time_left = (Difference_In_Time);
+        // alert(Difference_In_Time);
         
 
         // Count Down
