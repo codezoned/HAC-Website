@@ -423,7 +423,12 @@ ul li a {
 .alert-logo {
 	height: 30%;
 	width: 30%;
-	margin-left: 50%;
+	/* margin-left: 50%; */
+	margin-bottom: 20px;
+}
+.bhumi-logo {
+	margin-top: 5%;
+	width:40%;
 	margin-bottom: 20px;
 }
 .voice-logo {
@@ -913,8 +918,12 @@ ul li a {
 	.alert-logo {
 		width: 50%;
 		padding-left: 0;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 
+	}
+	.bhumi-logo {
+		width: 60%;
+		margin-bottom:10px;
 	}
 	.details {
 		margin-top: 10%;
