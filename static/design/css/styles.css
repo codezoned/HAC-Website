@@ -44,7 +44,7 @@ ul li a {
 #codeit,
 #sponsor-text,
 #speaker-text,
-#team-text {
+#team-text, #mentor-text {
 	-webkit-transition: all 1s ease !important;
 }
 .prizes {
